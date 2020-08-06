@@ -42,13 +42,25 @@ The landing page has been designed to highlight this information as clearly as p
 
 The page also includes a terms and conditions section and options to share the tournament on social media.
 
-Most of that information will be hard-coded into the page, however both the leaderboard and the countdown timer should be dynamic.
-The leaderboard should retrieve the current rankings from the following API endpoint when the page loads, as well as updating those rankings whenever a user presses the refresh button just above it. The leaderboard should always be sorted based on player ranking and must display the top six players at all times, with the rest accessible when a user scrolls.
+The information on the page will be a mixture of hard coded or (where available) should be pulled in from the provided API endpoint (listed below).
+
+Both the leaderboard and the countdown timer should be dynamic.
+The leaderboard should retrieve the current rankings from the API endpoint when the page loads, as well as updating those rankings whenever a user presses the refresh button just above it. The leaderboard should always be sorted based on player ranking and must display the top six players at all times, with the rest accessible when a user scrolls.
 The timer should count down from the start date and will therefore need to automatically refresh its value every minute. **For the sake of the challenge, it's fine to just make the timer always "start" at 7 days regardless of the actual date or value of the tournament start date.**
 
 The "join" button and both social media share buttons should be valid, accessible buttons. However **they do not need to route the user anywhere**.
 
 The page headline should read **Play'n GO Tournament** at all screen sizes. On the provided mockups you'll notice that the mobile design has a two-line headline, but that should be ignored.
+
+### API Endpoint
+You have also been provided with an API endpoint that details some key information about the tournament (title, start and end dates, player rankings etc.).
+
+Your solution should request all information from the API, ingest the returned JSON package, and use the details it contains to populate the webpage.
+
+Where the API data differs from the design mockups, **prioritise the API version**, for example the total number of players.
+
+Endpoint:
+`https://run.mocky.io/v3/e60fb51f-02b1-4ede-bd82-6c0481b5edda`
 
 ### What We're Looking For
 Your solution should:
@@ -58,6 +70,7 @@ Your solution should:
 - Match the provided designs as closely as possible;
 - Make use of modern CSS layout techniques;
 - Be built from reusable UI components;
+- Show an understanding of core React concepts such as `props`;
 - Retrieve the necessary information from the provided API endpoint or gracefully fail if the request returns an error;
 - Use semantic code wherever possible, including HTML5 elements and human-readable variable naming;
 - Be accessible for all users.
