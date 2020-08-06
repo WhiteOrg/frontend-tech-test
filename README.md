@@ -78,8 +78,11 @@ Your solution should:
 How you achieve that is entirely up to you. The repository should have all the tools you need, but if you'd like to augment them with additional dependencies or services then go for it 👩‍💻
 
 ### Bonus Points
-- Using some CSS-in-JS. We use Styled Components internally and you'll find that package already included within the repository.
-- Writing a unit test or two. We're definitely not looking for perfect code coverage (or any code coverage, honestly), but if you're comfortable using tools like Jest then feel free to check some core pieces of functionality.
+Just a few additional extras if you have spare time. These are _absolutely not necessary_ but mimic our own internal tech stack a bit more closely, so it's useful for us to see how you might use them.
+
+- Using some CSS-in-JS. We use [Styled Components](https://styled-components.com/) internally and you'll find that package already included within the repository.
+- Writing a unit test or two. We're definitely not looking for perfect code coverage (or any code coverage, honestly), but if you're comfortable using tools like [Jest](https://jestjs.io/) or [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) then feel free to check some core pieces of functionality.
+- Adding a touch of type safety. You'll find [TypeScript](https://www.typescriptlang.org/) is available if you prefer working with type-safe components.
 
 ## Submitting Your Solution
 Once you're happy with your work, follow these steps:
