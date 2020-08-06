@@ -1,0 +1,54 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 68 60" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#0A4A90;}
+	.st1{fill:#178D76;}
+	.st2{fill:#55D07C;}
+	.st3{fill:#1775F2;}
+	.st4{fill:url(#Fill-6_1_);}
+	.st5{fill:url(#Fill-10_1_);}
+	.st6{fill:url(#Fill-19_1_);}
+	.st7{fill:url(#Fill-23_1_);}
+	.st8{fill:#FFFFFF;}
+</style>
+<title>Stech</title>
+<g id="Current">
+	<g id="logo-white">
+		<g id="Group-16">
+			<polygon id="Fill-1" class="st0" points="21,0 31.6,13.3 42.1,0    "/>
+			<polygon id="Fill-2" class="st0" points="0,26.4 10.6,39.7 21.1,26.4    "/>
+			<polygon id="Fill-3" class="st1" points="10.5,13.2 21.1,26.4 31.6,13.2    "/>
+			<polygon id="Fill-4" class="st2" points="10.5,13.3 31.6,13.3 21.1,0    "/>
+			<polygon id="Fill-5" class="st3" points="0,26.4 21.1,26.4 10.6,13.2    "/>
+			
+				<linearGradient id="Fill-6_1_" gradientUnits="userSpaceOnUse" x1="-196.9539" y1="420.8915" x2="-196.2042" y2="420.4478" gradientTransform="matrix(21.1313 0 0 -13.2551 4198.6777 5585.5752)">
+				<stop offset="0" style="stop-color:#06264D"/>
+				<stop offset="1" style="stop-color:#093E77"/>
+			</linearGradient>
+			<polygon id="Fill-6" class="st4" points="31.5,13.3 52.6,13.3 42.1,0    "/>
+			
+				<linearGradient id="Fill-10_1_" gradientUnits="userSpaceOnUse" x1="-196.9539" y1="420.8915" x2="-196.2042" y2="420.4479" gradientTransform="matrix(21.1313 0 0 -13.2551 4177.6748 5612.0225)">
+				<stop offset="0" style="stop-color:#06264D"/>
+				<stop offset="1" style="stop-color:#093E77"/>
+			</linearGradient>
+			<polygon id="Fill-10" class="st5" points="10.5,39.7 31.6,39.7 21.1,26.4    "/>
+			<polygon id="Fill-14" class="st0" points="25.9,60 47.1,60 36.5,46.7    "/>
+			<polygon id="Fill-15" class="st0" points="47,33.6 68.1,33.6 57.6,20.3    "/>
+			<polygon id="Fill-16" class="st1" points="36.5,46.7 57.6,46.7 47.1,33.5    "/>
+			<polygon id="Fill-17" class="st2" points="36.4,46.7 47,60 57.6,46.7    "/>
+			<polygon id="Fill-18" class="st3" points="47,33.5 57.6,46.7 68.1,33.5    "/>
+			
+				<linearGradient id="Fill-19_1_" gradientUnits="userSpaceOnUse" x1="-196.4533" y1="420.8911" x2="-197.1651" y2="421.3911" gradientTransform="matrix(21.1313 0 0 -13.2551 4182.6045 5632.3203)">
+				<stop offset="0" style="stop-color:#06264D"/>
+				<stop offset="1" style="stop-color:#093E77"/>
+			</linearGradient>
+			<polygon id="Fill-19" class="st6" points="15.4,46.7 26,60 36.6,46.7    "/>
+			
+				<linearGradient id="Fill-23_1_" gradientUnits="userSpaceOnUse" x1="-196.4533" y1="420.8911" x2="-197.1651" y2="421.3911" gradientTransform="matrix(21.1313 0 0 -13.2551 4203.6729 5605.873)">
+				<stop offset="0" style="stop-color:#06264D"/>
+				<stop offset="1" style="stop-color:#093E77"/>
+			</linearGradient>
+			<polygon id="Fill-23" class="st7" points="36.5,20.3 47.1,33.6 57.6,20.3    "/>
+		</g>
+	</g>
+</g>
+</svg>
