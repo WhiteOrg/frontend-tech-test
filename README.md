@@ -18,18 +18,18 @@ First, you'll need to have the following programs and services installed locally
 - [**Git**](https://git-scm.com/downloads) >= 2.27.0
 
 You'll also need a **GitHub account** if you don't already have one.
-We'd also strongly recommend the use of an IDE such as [Visual Studio Code](https://code.visualstudio.com/), as well as [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/), though feel free to use whatever setup you prefer 👍
+We'd strongly recommend the use of an IDE such as [Visual Studio Code](https://code.visualstudio.com/), as well as helpful tools like [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/), though feel free to use whatever setup you prefer 👍
 
 ### Setting Up The Challenge
 1. Open a terminal window and navigate to the folder you want the repository to sit within;
 1. Clone the repository to your local drive using:
 `git clone https://github.com/WhiteOrg/frontend-tech-test.git`
-1. Change directory into the new folder:
+1. Navigate to the new folder:
 `cd frontend-tech-test`
 1. Run `git status` to ensure that you're on the correct branch (`main`) and that the upstream branch is recognised (`origin/main`);
 1. Create a new branch using **your name** e.g.
 `git checkout -b katherine-johnson`
-1. Run `npm start` to launch the app to [http://localhost:3000](http://localhost:3000); you should see a rotating ReactJS logo and some text if everything has worked. Edit that page in the `App.js` file and you should see it automatically update in the browser when you hit save 😎
+1. Run `npm start` to launch the app to [http://localhost:3000](http://localhost:3000); you should see a rotating Stech logo and some text if everything has worked. Edit that page in the `App.js` file and you should see it automatically update in the browser when you hit save 😎
 
 At this stage, feel free to push your branch back up to the original repository (see submission instructions for how). We won't peek at your work until you submit the final solution, so it's fine (recommended, even) to use the GitHub repo as a backup as you progress.
 
@@ -48,9 +48,7 @@ Both the leaderboard and the countdown timer should be dynamic.
 The leaderboard should retrieve the current rankings from the API endpoint when the page loads, as well as updating those rankings whenever a user presses the refresh button just above it. The leaderboard should always be sorted based on player ranking and must display the top six players at all times, with the rest accessible when a user scrolls.
 The timer should count down from the start date and will therefore need to automatically refresh its value every minute. **For the sake of the challenge, it's fine to just make the timer always "start" at 7 days regardless of the actual date or value of the tournament start date.**
 
-The "join" button and both social media share buttons should be valid, accessible buttons. However **they do not need to route the user anywhere**.
-
-The page headline should read **Play'n GO Tournament** at all screen sizes. On the provided mockups you'll notice that the mobile design has a two-line headline, but that should be ignored.
+The "join" button, refresh button, and both social media share buttons should be valid and accessible interactive elements. However **they do not need to route the user anywhere** (though the refresh button _should_ refetch data from the API as mentioned above).
 
 ### API Endpoint
 You have also been provided with an API endpoint that details some key information about the tournament (title, start and end dates, player rankings etc.).
@@ -61,6 +59,11 @@ Where the API data differs from the design mockups, **prioritise the API version
 
 Endpoint:
 `https://run.mocky.io/v3/e60fb51f-02b1-4ede-bd82-6c0481b5edda`
+
+### Notes
+- You'll notice that the provided mockups have different headline text for mobile/desktop views. To be clear, the headline should always be the value provided via the API, regardless of viewport size.
+- All fonts used on the designs have already been included in the repository for you to use.
+- The first thing you'll have to do is delete the existing logo, title etc. in `App.js`, but also feel free to tidy up respective `.css` files and anything else you don't need.
 
 ### What We're Looking For
 Your solution should:
@@ -87,14 +90,14 @@ Just a few additional extras if you have spare time. These are _absolutely not n
 ## Submitting Your Solution
 Once you're happy with your work, follow these steps:
 
-1. Ensure any test code is tidied up (debug strings, commented out functionality, etc. – actual comments are encouraged);
+1. Ensure any test code is tidied up (debug strings, commented out functionality, etc. – actual comments are fine and actively encouraged 😉);
 1. Push your branch back to the original repository (use **your branch name** not the example below):
 `git push -u origin katherine-johnson`
 1. On GitHub, open a new pull request to merge your branch into `main`, with your name as the title;
 1. Add any relevant notes or comments to the description as necessary;
 1. Hit **Create Pull Request** and you're done! ✨
 
-Don't worry if you submit a PR and then realise you've missed something or think of a better solution to part of the challenge. We're not testing to see how *fast* you are but how good your code quality is, so feel free to push up additional changes right up to the deadline. The pull request will automatically update each time you do.
+Don't worry if you submit a pull request and then realise you've missed something or think of a better solution to part of the challenge. We're not testing to see how *fast* you are but how good your code quality is, so feel free to push up additional changes right up to the deadline. The pull request will automatically update each time you do.
 Any changes submmited _after_ the deadline, however, won't be considered.
 
 ### What Happens Next?
