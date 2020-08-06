@@ -61,6 +61,7 @@ Endpoint:
 `https://run.mocky.io/v3/e60fb51f-02b1-4ede-bd82-6c0481b5edda`
 
 ### Notes
+- Don't worry about the **close button** at the top right of the design; try to include it as an image or interactive element, but we won't expect it to do anything. Consider it purely a visual placeholder.
 - You'll notice that the provided mockups have different headline text for mobile/desktop views. To be clear, the headline should always be the value provided via the API, regardless of viewport size.
 - All fonts used on the designs have already been included in the repository for you to use.
 - The first thing you'll have to do is delete the existing logo, title etc. in `App.js`, but also feel free to tidy up respective `.css` files and anything else you don't need.
