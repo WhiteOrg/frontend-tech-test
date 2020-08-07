@@ -10,8 +10,10 @@ export const paragraph = () => (
     <Paragraph size="small" textColor="#17dfe7">
       PRIZE POOL
     </Paragraph>
-    <Paragraph size="medium">P.C</Paragraph>
-    <Paragraph size="large" textColor="white" bold>
+    <Paragraph size="medium" bold>
+      P.C
+    </Paragraph>
+    <Paragraph size="large" textColor="white">
       £25,000.00
     </Paragraph>
     <Paragraph>

@@ -12,7 +12,7 @@ const Paragraph = styled.p<Props>`
     else if (size === "large") return "font-size: 24px";
     else return "font-size: 16px";
   }};
-  font-weight: ${({ bold }) => (bold ? "bold" : "600")};
+  font-weight: ${({ bold }) => (bold ? "bolder" : "600")};
   color: ${(props) => props.textColor || "black"};
 `;
 
