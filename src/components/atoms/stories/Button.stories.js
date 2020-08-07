@@ -7,6 +7,12 @@ export default {
 
 export const button = () => (
   <div>
-    <Button>Join</Button>
+    <div>
+      <Button>Join</Button>
+    </div>
+    <br />
+    <div>
+      <Button fullWidth>Join</Button>
+    </div>
   </div>
 );
