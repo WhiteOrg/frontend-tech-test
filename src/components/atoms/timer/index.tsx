@@ -6,9 +6,9 @@ const Flipper = styled.div`
   height: 3px;
   border-radius: 1.5px;
   background-color: rgba(255, 255, 255, 0.3);
-  position: absolute;
-  left: 14px;
-  top: 24px;
+  position: relative;
+  left: 4px;
+  top: 15px;
 `;
 
 const Rectangle = styled.div`
@@ -19,12 +19,12 @@ const Rectangle = styled.div`
 `;
 
 const Text = styled.p`
-  line-height: 0;
+  line-height: 1.5;
   text-align: center;
   font-size: 18px;
   font-weight: 600;
   color: white;
-  margin-bottom: -22px;
+  margin: 0;
 `;
 
 class Timer extends React.Component {
