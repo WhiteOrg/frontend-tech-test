@@ -9,10 +9,11 @@ type Props = {
 
 const Container = styled.div`
   display: flex;
-  justify-content: space-around;
-  max-width: 295px;
+  justify-content: space-between;
+  max-width: 255px;
   & > p {
     align-self: center;
+    margin: 0;
   }
 `;
 

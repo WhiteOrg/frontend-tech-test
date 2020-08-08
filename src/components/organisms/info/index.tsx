@@ -19,14 +19,48 @@ type Props = {
   readonly backgroundImage: string;
 };
 
-const Container = styled.section``;
+interface PropsContainer {
+  readonly backgroundImage: string;
+}
 
-const TitleRow = styled.div``;
+const Container = styled.section<PropsContainer>`
+  display: flex;
+  flex-direction: column;
+  background-image: url(${(props) => props.backgroundImage});
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 400px;
+  padding: 20px;
+  justify-content: space-between;
+  & > button {
+    @media (min-width: 1200px) {
+      max-width: 30%;
+    }
+  }
+`;
 
-const InfoRow = styled.div``;
+const TitleRow = styled.div`
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  & > img {
+    align-self: baseline;
+  }
+`;
+
+const InfoRow = styled.div`
+  display: flex;
+  max-width: 75%;
+  justify-content: space-between;
+  @media (min-width: 1200px) {
+    max-width: 20%;
+  }
+`;
 
 const Info: React.FunctionComponent<Props> = (props) => (
-  <Container>
+  <Container backgroundImage={props.backgroundImage}>
     <TitleRow>
       <TitleH1 textColor="white">{props.title}</TitleH1>
       <Icon src={close} rotate={false} />

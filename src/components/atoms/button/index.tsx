@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-const Button = styled.button<Props>`
+const Button = styled.button`
   border-radius: 1px;
   background-color: #f9cb11;
-  width: 100%;
+  max-width: 100%;
   border: none;
   font-family: Roboto, sans-serif;
   font-size: 15px;
