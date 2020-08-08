@@ -1,13 +1,9 @@
 import styled from "styled-components";
 
-interface Props {
-  readonly fullWidth: boolean;
-}
-
 const Button = styled.button<Props>`
   border-radius: 1px;
   background-color: #f9cb11;
-  width: ${({ fullWidth }) => (fullWidth ? "100%" : "50%")};
+  width: 100%;
   border: none;
   font-family: Roboto, sans-serif;
   font-size: 15px;

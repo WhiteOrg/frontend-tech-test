@@ -7,7 +7,7 @@ export default {
 
 const data = {
   title: "Play'n GO Tournament",
-  endDate: "2020-15-06T10:06:29.578Z",
+  endDate: "2020-08-15T10:06:29.578Z",
   startDate: "2020-08-06T10:06:29.578Z",
   prizePool: "£25,000.00",
   backgroundImage: "https://i.imgur.com/W4WBNV2.jpg",

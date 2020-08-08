@@ -36,11 +36,8 @@ const Info: React.FunctionComponent<Props> = (props) => (
       <PoolInfo title="prizePool" info={props.prizePool} />
       <PoolInfo title="player" info={props.players.toString()} icon={user} />
     </InfoRow>
-    <StartDate
-      info="Starts on Thu, 20 Feb 2020, 23:00:00 GMT"
-      icon={calendar}
-    />
-    <Button fullWidth />
+    <StartDate startDate={props.startDate} icon={calendar} />
+    <Button>Join</Button>
   </Container>
 );
 

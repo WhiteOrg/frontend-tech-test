@@ -11,8 +11,5 @@ export const button = () => (
       <Button>Join</Button>
     </div>
     <br />
-    <div>
-      <Button fullWidth>Join</Button>
-    </div>
   </div>
 );
