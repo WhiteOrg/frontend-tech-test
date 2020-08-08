@@ -9,7 +9,7 @@ type Props = {
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
-  max-width: 280px;
+  max-width: 300px;
   align-items: center;
 `;
 
@@ -31,21 +31,24 @@ const CountDown: React.FunctionComponent<Props> = (props) => {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
         minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
       };
     }
     return {
       days: 0,
       hours: 0,
       minutes: 0,
+      seconds: 0,
     };
   };
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   useEffect(() => {
-    setTimeout(() => {
+    let id = setTimeout(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
+    return () => clearInterval(id);
   });
 
   return (
@@ -57,6 +60,8 @@ const CountDown: React.FunctionComponent<Props> = (props) => {
       <Text>h</Text>
       <Timer>{timeLeft.minutes}</Timer>
       <Text>m</Text>
+      <Timer>{timeLeft.seconds}</Timer>
+      <Text>s</Text>
     </Container>
   );
 };
