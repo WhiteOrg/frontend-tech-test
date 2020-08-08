@@ -9,6 +9,7 @@ export default {
 export const pool_info = () => (
   <div>
     <PoolInfo title="prize pool" info="£25,000.00" />
+    <br />
     <PoolInfo title="player" info="359" icon={user} />
   </div>
 );
