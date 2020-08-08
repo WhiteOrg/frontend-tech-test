@@ -6,14 +6,6 @@ type Props = {
   endDate: string;
 };
 
-type State = {
-  timeLeft: {
-    days: number;
-    hours: number;
-    minutes: number;
-  };
-};
-
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
