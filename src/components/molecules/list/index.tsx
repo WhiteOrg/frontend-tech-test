@@ -45,6 +45,8 @@ const Row = styled.div`
   display: flex;
   border-bottom: 1px solid #f5f4fe;
   justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
   & > p {
     flex: 1;
   }
