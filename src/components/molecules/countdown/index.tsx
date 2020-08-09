@@ -4,6 +4,7 @@ import Timer from "../../atoms/timer";
 
 type Props = {
   startDate: string;
+  test?: boolean;
 };
 
 const Container = styled.div`
@@ -21,7 +22,7 @@ const Text = styled.p`
 
 const CountDown: React.FunctionComponent<Props> = (props) => {
   const calculateTimeLeft = () => {
-    let now = new Date();
+    let now = props.test ? new Date("2020-08-06T10:06:29.578Z") : new Date();
     let startDate = new Date(props.startDate);
 
     const difference = +startDate - +now;

@@ -1,29 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ATOMS: Render testing Should render StartDate 1`] = `
-<div>
-  <div
-    className="sc-AxirZ ehRAKx"
-  >
-    <img
-      className="sc-AxiKw bOTXee"
-      src="calendar.svg"
-    />
-    <p
-      className="sc-AxjAm jlKNmI"
-      color="white"
-      size="small"
-    >
-      Starts On 
-      Thu Aug 06 2020
-      ,
-       
-      11:06:29 AM
-    </p>
-  </div>
-</div>
-`;
-
 exports[`MOLECULES: Render testing Should render StartDate 1`] = `
 <div>
   <div

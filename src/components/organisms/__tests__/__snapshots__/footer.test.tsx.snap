@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ORGANISMS: Render testing Should render Footer 1`] = `
+<footer
+  className="sc-AxhUy kOLnmY"
+>
+  <div
+    className="sc-AxiKw gIfVsQ"
+  >
+    <p
+      className="sc-AxjAm iSHejg"
+      color="#f9cb11"
+      size="medium"
+    >
+      Share this Tournament
+    </p>
+    <div
+      className="sc-AxhCb gewXQy"
+    >
+      <img
+        className="sc-AxirZ kOBdo"
+        src="twitter.svg"
+      />
+      <img
+        className="sc-AxirZ kOBdo"
+        src="facebook.svg"
+      />
+    </div>
+  </div>
+</footer>
+`;
+
+exports[`ORGANISMS: Render testing Should render TermsCondition 1`] = `
+<footer
+  className="sc-AxhUy kOLnmY"
+>
+  <div
+    className="sc-AxiKw gIfVsQ"
+  >
+    <p
+      className="sc-AxjAm iSHejg"
+      color="#f9cb11"
+      size="medium"
+    >
+      Share this Tournament
+    </p>
+    <div
+      className="sc-AxhCb gewXQy"
+    >
+      <img
+        className="sc-AxirZ kOBdo"
+        src="twitter.svg"
+      />
+      <img
+        className="sc-AxirZ kOBdo"
+        src="facebook.svg"
+      />
+    </div>
+  </div>
+</footer>
+`;

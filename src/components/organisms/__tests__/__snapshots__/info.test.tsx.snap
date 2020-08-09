@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ORGANISMS: Render testing Should render Info 1`] = `
+<section
+  className="sc-fznZeY ktfIdh"
+>
+  <div
+    className="sc-fzokOt jvoMhi"
+  >
+    <h1
+      className="sc-fzpans buSerY"
+      color="white"
+    >
+      Play'n GO Tournament
+    </h1>
+    <img
+      className="sc-fznKkj flgnqk"
+      src="close.svg"
+    />
+  </div>
+  <div
+    className="sc-AxhCb fzQUN"
+  >
+    <p
+      className="sc-AxhUy blACGn"
+    >
+      Start at
+    </p>
+    <div
+      className="sc-AxirZ hqRJJG"
+    >
+      <div
+        className="sc-AxjAm crHSQi"
+      />
+      <p
+        className="sc-AxiKw dPBvyy"
+      >
+        7
+      </p>
+    </div>
+    <p
+      className="sc-AxhUy blACGn"
+    >
+      d
+    </p>
+    <div
+      className="sc-AxirZ hqRJJG"
+    >
+      <div
+        className="sc-AxjAm crHSQi"
+      />
+      <p
+        className="sc-AxiKw dPBvyy"
+      >
+        0
+      </p>
+    </div>
+    <p
+      className="sc-AxhUy blACGn"
+    >
+      h
+    </p>
+    <div
+      className="sc-AxirZ hqRJJG"
+    >
+      <div
+        className="sc-AxjAm crHSQi"
+      />
+      <p
+        className="sc-AxiKw dPBvyy"
+      >
+        0
+      </p>
+    </div>
+    <p
+      className="sc-AxhUy blACGn"
+    >
+      m
+    </p>
+    <div
+      className="sc-AxirZ hqRJJG"
+    >
+      <div
+        className="sc-AxjAm crHSQi"
+      />
+      <p
+        className="sc-AxiKw dPBvyy"
+      >
+        0
+      </p>
+    </div>
+    <p
+      className="sc-AxhUy blACGn"
+    >
+      s
+    </p>
+  </div>
+  <div
+    className="sc-fzqBZW ddNpgp"
+  >
+    <div
+      className="sc-AxheI keUOYi"
+    >
+      <p
+        className="sc-AxgMl ihGhNq"
+        color="#17dfe7"
+        size="small"
+      >
+        prizePool
+      </p>
+      <p
+        className="sc-AxgMl cEZKXj"
+        color="white"
+        size="large"
+      >
+        £25,000.00
+      </p>
+    </div>
+    <div
+      className="sc-AxheI keUOYi"
+    >
+      <p
+        className="sc-AxgMl ihGhNq"
+        color="#17dfe7"
+        size="small"
+      >
+        player
+      </p>
+      <div
+        className="sc-Axmtr ehIxxi"
+      >
+        <img
+          className="sc-AxmLO cAKCgh"
+          src="user.svg"
+        />
+        <p
+          className="sc-AxgMl cEZKXj"
+          color="white"
+          size="large"
+        >
+          250
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-fzozJi TVMZz"
+  >
+    <img
+      className="sc-fzoLsD fqEnxe"
+      src="calendar.svg"
+    />
+    <p
+      className="sc-AxgMl ffRgtg"
+      color="white"
+      size="small"
+    >
+      Starts On 
+      Thu Aug 13 2020
+      ,
+       
+      11:06:29 AM
+    </p>
+  </div>
+  <button
+    className="sc-fznyAO hHojmN"
+  >
+    Join
+  </button>
+</section>
+`;

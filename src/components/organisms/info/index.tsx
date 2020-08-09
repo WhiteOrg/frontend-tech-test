@@ -17,6 +17,7 @@ export interface PropsInfo {
   readonly startDate: string;
   readonly endDate: string;
   readonly backgroundImage: string;
+  readonly test?: boolean;
 }
 
 interface PropsContainer {
@@ -65,7 +66,7 @@ const Info: React.FunctionComponent<PropsInfo> = (props) => (
       <TitleH1 color="white">{props.title}</TitleH1>
       <Icon src={close} />
     </TitleRow>
-    <CountDown startDate={props.startDate} />
+    <CountDown startDate={props.startDate} test={props.test} />
     <InfoRow>
       <PoolInfo title="prizePool" info={props.prizePool} />
       <PoolInfo title="player" info={props.players.toString()} icon={user} />

@@ -58,5 +58,5 @@ const data = {
 };
 
 export const prize_list = () => (
-  <PrizeList {...data} rotate={number("Rotate", 0)} />
+  <PrizeList {...data} rotate={number("Rotate", 0)} onClick={() => {}} />
 );

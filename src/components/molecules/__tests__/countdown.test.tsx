@@ -7,7 +7,7 @@ describe("MOLECULES: Render testing", () => {
     let startDate = "2020-08-08T10:06:29.578Z";
     const component = renderer.create(
       <div>
-        <Countdown startDate={startDate} />
+        <Countdown startDate={startDate} test />
       </div>
     );
     let tree = component.toJSON();

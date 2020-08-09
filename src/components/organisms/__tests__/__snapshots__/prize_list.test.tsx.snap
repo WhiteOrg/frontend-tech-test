@@ -1,7 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MOLECULES: Render testing Should render List 1`] = `
-<div>
+exports[`ORGANISMS: Render testing Should render PrizeList 1`] = `
+<section
+  className="sc-Axmtr erLQOu"
+>
+  <div
+    className="sc-AxmLO cVpQGk"
+  >
+    <h2
+      className="sc-AxhUy blDKju"
+      color="#091870"
+    >
+      Prize List
+    </h2>
+    <img
+      className="sc-AxheI cvrYZJ"
+      onClick={[Function]}
+      rotate={0}
+      src="refresh.svg"
+    />
+  </div>
+  <hr
+    className="sc-AxgMl ihdfMH"
+  />
   <div
     className="sc-AxirZ gdibQh"
   >
@@ -256,5 +277,15 @@ exports[`MOLECULES: Render testing Should render List 1`] = `
       </p>
     </div>
   </div>
-</div>
+  <hr
+    className="sc-AxgMl ihdfMH"
+  />
+  <p
+    className="sc-AxjAm qAnnS"
+    color="black"
+    size="medium"
+  >
+    The search for gold starts in the Sahara Desert! There’s potential for big cash prizes of up to 1,000 your stake with the Free Spins feature so you’ll want to stock up on those Story Book Free Spin Symbols to get your chance. 
+  </p>
+</section>
 `;

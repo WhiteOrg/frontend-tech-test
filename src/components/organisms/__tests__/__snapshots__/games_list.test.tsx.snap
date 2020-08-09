@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ORGANISMS: Render testing Should render GameList 1`] = `
+<section
+  className="sc-AxiKw jWoTjM"
+>
+  <h2
+    className="sc-AxirZ hvUUMv"
+    color="#091870"
+  >
+    Include Games
+  </h2>
+  <div
+    className="sc-AxhCb ckJXts"
+  >
+    <img
+      alt="First Game"
+      className="sc-AxhUy gVYkPg"
+      src="https://i.imgur.com/gmXp0zM.jpg"
+    />
+    <img
+      alt="Second Game"
+      className="sc-AxhUy gVYkPg"
+      src="https://i.imgur.com/ecK4twD.jpg"
+    />
+    <img
+      alt="Third Game"
+      className="sc-AxhUy gVYkPg"
+      src="https://i.imgur.com/kn70JZB.jpg"
+    />
+    <img
+      alt="Fourth Game"
+      className="sc-AxhUy gVYkPg"
+      src="https://i.imgur.com/F6XZ6v5.jpg"
+    />
+    <img
+      alt="Fifth Game"
+      className="sc-AxhUy gVYkPg"
+      src="https://i.imgur.com/4RKCXxe.jpg"
+    />
+    <img
+      alt="Sixth Game"
+      className="sc-AxhUy gVYkPg"
+      src="https://i.imgur.com/lVq9s16.jpg"
+    />
+  </div>
+</section>
+`;
