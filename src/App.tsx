@@ -22,7 +22,6 @@ class App extends React.Component<{}, State> {
   };
 
   getData() {
-    console.log("test");
     fetch("https://run.mocky.io/v3/e60fb51f-02b1-4ede-bd82-6c0481b5edda")
       .then((res) => res.json())
       .then(
