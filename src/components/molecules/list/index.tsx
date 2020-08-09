@@ -1,11 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Paragraph from "../../atoms/paragraph";
-
-type Prize = {
-  title: string;
-  total: string;
-};
+import { Prize } from "../../types";
 
 type Props = {
   prizeList: Prize[];
