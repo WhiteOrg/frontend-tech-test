@@ -7,13 +7,14 @@ import TermsCondition, {
   PropsTermsCondition,
 } from "../../organisms/terms_condition";
 import Footer from "../../organisms/footer";
-import refresh from "../../../images/refresh.svg";
 
 interface Props
   extends PropsInfo,
     PropsPrizeList,
     PropsGamesList,
-    PropsTermsCondition {}
+    PropsTermsCondition {
+  readonly refresh?: string;
+}
 
 const Container = styled.div``;
 
@@ -36,7 +37,6 @@ const Tournament: React.FunctionComponent<Props> = (props) => {
   const prizeListProps = {
     titlePrizeList: props.titlePrizeList,
     prizeList: props.prizeList,
-    refresh,
     description: props.description,
   };
   return (
