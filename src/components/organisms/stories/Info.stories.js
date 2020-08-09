@@ -14,13 +14,4 @@ const data = {
   players: 250,
 };
 
-export const info = () => (
-  <Info
-    title={data.title}
-    prizePool={data.prizePool}
-    players={data.players}
-    startDate={data.startDate}
-    endDate={data.endDate}
-    backgroundImage={data.backgroundImage}
-  />
-);
+export const info = () => <Info {...data} />;

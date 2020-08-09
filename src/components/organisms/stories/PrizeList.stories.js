@@ -56,4 +56,4 @@ const data = {
   rotate: false,
 };
 
-export const prizelist = () => <PrizeList {...data} />;
+export const prize_list = () => <PrizeList {...data} />;
