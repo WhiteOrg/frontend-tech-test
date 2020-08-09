@@ -62,8 +62,8 @@ const InfoRow = styled.div`
 const Info: React.FunctionComponent<PropsInfo> = (props) => (
   <Container backgroundImage={props.backgroundImage}>
     <TitleRow>
-      <TitleH1 textColor="white">{props.title}</TitleH1>
-      <Icon src={close} rotate={false} />
+      <TitleH1 color="white">{props.title}</TitleH1>
+      <Icon src={close} />
     </TitleRow>
     <CountDown endDate={props.endDate} />
     <InfoRow>

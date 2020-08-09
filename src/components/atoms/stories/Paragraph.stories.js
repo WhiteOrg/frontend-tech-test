@@ -7,13 +7,13 @@ export default {
 
 export const paragraph = () => (
   <div>
-    <Paragraph size="small" textColor="#17dfe7">
+    <Paragraph size="small" color="#17dfe7">
       PRIZE POOL
     </Paragraph>
     <Paragraph size="medium" bold>
       P.C
     </Paragraph>
-    <Paragraph size="large" textColor="white">
+    <Paragraph size="large" color="white">
       £25,000.00
     </Paragraph>
     <Paragraph>

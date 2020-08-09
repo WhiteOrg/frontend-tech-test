@@ -8,6 +8,6 @@ export default {
 export const titles = () => (
   <div>
     <TitleH1>H1</TitleH1>
-    <TitleH2 textColor="#091870">H2</TitleH2>
+    <TitleH2 color="#091870">H2</TitleH2>
   </div>
 );

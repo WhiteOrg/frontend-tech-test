@@ -37,7 +37,7 @@ const Tournament: React.FunctionComponent<Props> = (props) => {
     titlePrizeList: props.titlePrizeList,
     prizeList: props.prizeList,
     refresh,
-    detail: props.detail,
+    description: props.description,
   };
   return (
     <Container>

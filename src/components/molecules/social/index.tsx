@@ -19,12 +19,12 @@ const IconRow = styled.div`
 
 const Social: React.FunctionComponent = (props) => (
   <Container>
-    <Paragraph size="medium" textColor="#f9cb11">
+    <Paragraph size="medium" color="#f9cb11">
       {props.children}
     </Paragraph>
     <IconRow>
-      <Icon src={Twitter} rotate={false} />
-      <Icon src={Facebook} rotate={false} />
+      <Icon src={Twitter} />
+      <Icon src={Facebook} />
     </IconRow>
   </Container>
 );

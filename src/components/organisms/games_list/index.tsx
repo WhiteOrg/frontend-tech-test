@@ -31,7 +31,7 @@ const GameImage = styled.img`
 
 const GamesList: React.FunctionComponent<PropsGamesList> = (props) => (
   <Container>
-    <TitleH2 textColor="#091870">{props.titleGamesList}</TitleH2>
+    <TitleH2 color="#091870">{props.titleGamesList}</TitleH2>
     <GameList>
       {props.games.map(({ title, src }, index) => (
         <GameImage key={index} src={src} alt={title} />

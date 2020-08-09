@@ -56,13 +56,13 @@ const List: React.FunctionComponent<Props> = ({ prizeList }) => {
     <Container>
       {prizeList.map((prize, index) => (
         <Row key={index}>
-          <Paragraph size="medium" textColor="black" bold>
+          <Paragraph size="medium" color="black" bold>
             {index + 1}
           </Paragraph>
-          <Paragraph className="title-col" size="medium" textColor="black" bold>
+          <Paragraph className="title-col" size="medium" color="black" bold>
             {prize.title}
           </Paragraph>
-          <Paragraph size="medium" textColor="black" bold>
+          <Paragraph size="medium" color="black" bold>
             {prize.total}
           </Paragraph>
         </Row>

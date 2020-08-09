@@ -53,7 +53,7 @@ const data = {
     },
   ],
   refresh,
-  detail:
+  description:
     "The search for gold starts in the Sahara Desert! There’s potential for big cash prizes of up to 1,000 your stake with the Free Spins feature so you’ll want to stock up on those Story Book Free Spin Symbols to get your chance. ",
 };
 

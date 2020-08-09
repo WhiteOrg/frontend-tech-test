@@ -22,7 +22,7 @@ const Icon = styled.img``;
 const StartDate: React.FunctionComponent<Props> = ({ icon, startDate }) => (
   <Container>
     <Icon src={icon} />
-    <Paragraph size="small" textColor="white">
+    <Paragraph size="small" color="white">
       Starts On {new Date(startDate).toDateString()},{" "}
       {new Date(startDate).toLocaleTimeString()}
     </Paragraph>

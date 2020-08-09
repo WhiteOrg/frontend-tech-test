@@ -11,7 +11,7 @@ export interface PropsPrizeList {
   readonly titlePrizeList: string;
   readonly prizeList: Prize[];
   readonly refresh: string;
-  readonly detail: string;
+  readonly description: string;
   readonly rotate: number;
 }
 
@@ -31,14 +31,14 @@ const TitleRow = styled.div`
 const PrizeList: React.FunctionComponent<PropsPrizeList> = (props) => (
   <Container>
     <TitleRow>
-      <TitleH2 textColor="#091870">{props.titlePrizeList}</TitleH2>
+      <TitleH2 color="#091870">{props.titlePrizeList}</TitleH2>
       <Icon src={props.refresh} rotate={props.rotate} />
     </TitleRow>
     <Hr />
     <List prizeList={props.prizeList} />
     <Hr />
-    <Paragraph size="medium" textColor="black">
-      {props.detail}
+    <Paragraph size="medium" color="black">
+      {props.description}
     </Paragraph>
   </Container>
 );

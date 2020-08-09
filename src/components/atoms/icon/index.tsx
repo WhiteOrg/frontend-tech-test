@@ -1,7 +1,7 @@
 import styled, { keyframes, css } from "styled-components";
 
 interface Props {
-  readonly rotate: number;
+  readonly rotate?: number;
 }
 
 const rotation = keyframes`

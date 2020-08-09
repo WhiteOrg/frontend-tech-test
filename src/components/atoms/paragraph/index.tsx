@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 interface Props {
   readonly size: "small" | "medium" | "large";
-  readonly textColor: string;
+  readonly color: string;
   readonly upperCase?: boolean;
   readonly bold?: boolean;
 }
@@ -13,10 +13,9 @@ const Paragraph = styled.p<Props>`
     else if (size === "large") return "font-size: 24px";
     else return "font-size: 16px";
   }};
-  font-weight: ${({ bold }) => (bold ? "bolder" : "600")};
-  color: ${({ textColor }) => textColor || "black"};
-  text-transform: ${({ upperCase }) =>
-    upperCase ? "uppercase" : "capitalize"};
+  font-weight: ${({ bold }) => (bold ? "bolder" : "normal")};
+  color: ${({ color }) => color || "black"};
+  text-transform: ${({ upperCase }) => (upperCase ? "uppercase" : "none")};
 `;
 
 export default Paragraph;

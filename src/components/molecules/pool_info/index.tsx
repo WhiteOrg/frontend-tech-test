@@ -30,18 +30,18 @@ const Icon = styled.img``;
 const PoolInfo: React.FunctionComponent<Props> = ({ title, info, icon }) => {
   return (
     <Container>
-      <Paragraph size="small" textColor="#17dfe7" upperCase>
+      <Paragraph size="small" color="#17dfe7" upperCase>
         {title}
       </Paragraph>
       {icon ? (
         <Block>
           <Icon src={icon} />
-          <Paragraph size="large" textColor="white" upperCase>
+          <Paragraph size="large" color="white" upperCase>
             {info}
           </Paragraph>
         </Block>
       ) : (
-        <Paragraph size="large" textColor="white" upperCase>
+        <Paragraph size="large" color="white" upperCase>
           {info}
         </Paragraph>
       )}

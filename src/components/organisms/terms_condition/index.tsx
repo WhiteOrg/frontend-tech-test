@@ -25,7 +25,7 @@ const TermsCondition: React.FunctionComponent<PropsTermsCondition> = (
   props
 ) => (
   <Container>
-    <TitleH2 textColor="#091870">{props.titleTermsCondition}</TitleH2>
+    <TitleH2 color="#091870">{props.titleTermsCondition}</TitleH2>
     <TermsList>
       <Bullet>
         Advertising is key factor in your web site promotion. Let people talk
