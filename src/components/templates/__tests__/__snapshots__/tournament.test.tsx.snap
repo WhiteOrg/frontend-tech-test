@@ -1,0 +1,585 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TEMPLATES: Render testing Should render Tournament 1`] = `
+<div
+  className="sc-fzpmMD fpVDsO"
+>
+  <section
+    className="sc-fznZeY ktfIdh"
+  >
+    <div
+      className="sc-fzokOt jvoMhi"
+    >
+      <h1
+        className="sc-fzpans buSerY"
+        color="white"
+      >
+        Play'n GO Tournament
+      </h1>
+      <img
+        className="sc-fznKkj flgnqk"
+        src="close.svg"
+      />
+    </div>
+    <div
+      className="sc-AxhCb fzQUN"
+    >
+      <p
+        className="sc-AxhUy blACGn"
+      >
+        Start at
+      </p>
+      <div
+        className="sc-AxirZ hqRJJG"
+      >
+        <div
+          className="sc-AxjAm crHSQi"
+        />
+        <p
+          className="sc-AxiKw dPBvyy"
+        >
+          7
+        </p>
+      </div>
+      <p
+        className="sc-AxhUy blACGn"
+      >
+        d
+      </p>
+      <div
+        className="sc-AxirZ hqRJJG"
+      >
+        <div
+          className="sc-AxjAm crHSQi"
+        />
+        <p
+          className="sc-AxiKw dPBvyy"
+        >
+          0
+        </p>
+      </div>
+      <p
+        className="sc-AxhUy blACGn"
+      >
+        h
+      </p>
+      <div
+        className="sc-AxirZ hqRJJG"
+      >
+        <div
+          className="sc-AxjAm crHSQi"
+        />
+        <p
+          className="sc-AxiKw dPBvyy"
+        >
+          0
+        </p>
+      </div>
+      <p
+        className="sc-AxhUy blACGn"
+      >
+        m
+      </p>
+      <div
+        className="sc-AxirZ hqRJJG"
+      >
+        <div
+          className="sc-AxjAm crHSQi"
+        />
+        <p
+          className="sc-AxiKw dPBvyy"
+        >
+          0
+        </p>
+      </div>
+      <p
+        className="sc-AxhUy blACGn"
+      >
+        s
+      </p>
+    </div>
+    <div
+      className="sc-fzqBZW ddNpgp"
+    >
+      <div
+        className="sc-AxheI keUOYi"
+      >
+        <p
+          className="sc-AxgMl ihGhNq"
+          color="#17dfe7"
+          size="small"
+        >
+          prizePool
+        </p>
+        <p
+          className="sc-AxgMl cEZKXj"
+          color="white"
+          size="large"
+        >
+          £25,000.00
+        </p>
+      </div>
+      <div
+        className="sc-AxheI keUOYi"
+      >
+        <p
+          className="sc-AxgMl ihGhNq"
+          color="#17dfe7"
+          size="small"
+        >
+          player
+        </p>
+        <div
+          className="sc-Axmtr ehIxxi"
+        >
+          <img
+            className="sc-AxmLO cAKCgh"
+            src="user.svg"
+          />
+          <p
+            className="sc-AxgMl cEZKXj"
+            color="white"
+            size="large"
+          >
+            250
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-fzozJi TVMZz"
+    >
+      <img
+        className="sc-fzoLsD fqEnxe"
+        src="calendar.svg"
+      />
+      <p
+        className="sc-AxgMl ffRgtg"
+        color="white"
+        size="small"
+      >
+        Starts On 
+        Thu Aug 13 2020
+        ,
+         
+        11:06:29 AM
+      </p>
+    </div>
+    <button
+      className="sc-fznyAO hHojmN"
+    >
+      Join
+    </button>
+  </section>
+  <div
+    className="sc-fznxKY hNTCgr"
+  >
+    <section
+      className="sc-fzoXzr jRczUD"
+    >
+      <div
+        className="sc-fzpjYC bnNzpL"
+      >
+        <h2
+          className="sc-fzplWN iXNTEK"
+          color="#091870"
+        >
+          Prize List
+        </h2>
+        <img
+          className="sc-fznKkj flgnqk"
+          onClick={[Function]}
+          rotate={0}
+          src="refresh.svg"
+        />
+      </div>
+      <hr
+        className="sc-fzoLag glSwtt"
+      />
+      <div
+        className="sc-fzqNJr hTDcpW"
+      >
+        <div
+          className="sc-fzoyAV iqKaHV"
+        >
+          <p
+            className="sc-AxgMl hNugKX"
+            color="black"
+            size="medium"
+          >
+            1
+          </p>
+          <p
+            className="sc-AxgMl hNugKX title-col"
+            color="black"
+            size="medium"
+          >
+            P.C
+          </p>
+          <p
+            className="sc-AxgMl hNugKX"
+            color="black"
+            size="medium"
+          >
+            £2,500.00
+          </p>
+        </div>
+        <div
+          className="sc-fzoyAV iqKaHV"
+        >
+          <p
+            className="sc-AxgMl hNugKX"
+            color="black"
+            size="medium"
+          >
+            2
+          </p>
+          <p
+            className="sc-AxgMl hNugKX title-col"
+            color="black"
+            size="medium"
+          >
+            J.S
+          </p>
+          <p
+            className="sc-AxgMl hNugKX"
+            color="black"
+            size="medium"
+          >
+            £1,250.00
+          </p>
+        </div>
+        <div
+          className="sc-fzoyAV iqKaHV"
+        >
+          <p
+            className="sc-AxgMl hNugKX"
+            color="black"
+            size="medium"
+          >
+            3
+          </p>
+          <p
+            className="sc-AxgMl hNugKX title-col"
+            color="black"
+            size="medium"
+          >
+            H.J
+          </p>
+          <p
+            className="sc-AxgMl hNugKX"
+            color="black"
+            size="medium"
+          >
+            £700.00
+          </p>
+        </div>
+        <div
+          className="sc-fzoyAV iqKaHV"
+        >
+          <p
+            className="sc-AxgMl hNugKX"
+            color="black"
+            size="medium"
+          >
+            4
+          </p>
+          <p
+            className="sc-AxgMl hNugKX title-col"
+            color="black"
+            size="medium"
+          >
+            J.V
+          </p>
+          <p
+            className="sc-AxgMl hNugKX"
+            color="black"
+            size="medium"
+          >
+            £300.00
+          </p>
+        </div>
+        <div
+          className="sc-fzoyAV iqKaHV"
+        >
+          <p
+            className="sc-AxgMl hNugKX"
+            color="black"
+            size="medium"
+          >
+            5
+          </p>
+          <p
+            className="sc-AxgMl hNugKX title-col"
+            color="black"
+            size="medium"
+          >
+            L.K
+          </p>
+          <p
+            className="sc-AxgMl hNugKX"
+            color="black"
+            size="medium"
+          >
+            £100.00
+          </p>
+        </div>
+        <div
+          className="sc-fzoyAV iqKaHV"
+        >
+          <p
+            className="sc-AxgMl hNugKX"
+            color="black"
+            size="medium"
+          >
+            6
+          </p>
+          <p
+            className="sc-AxgMl hNugKX title-col"
+            color="black"
+            size="medium"
+          >
+            H.D
+          </p>
+          <p
+            className="sc-AxgMl hNugKX"
+            color="black"
+            size="medium"
+          >
+            £50.00
+          </p>
+        </div>
+        <div
+          className="sc-fzoyAV iqKaHV"
+        >
+          <p
+            className="sc-AxgMl hNugKX"
+            color="black"
+            size="medium"
+          >
+            7
+          </p>
+          <p
+            className="sc-AxgMl hNugKX title-col"
+            color="black"
+            size="medium"
+          >
+            V.G
+          </p>
+          <p
+            className="sc-AxgMl hNugKX"
+            color="black"
+            size="medium"
+          >
+            £35.00
+          </p>
+        </div>
+        <div
+          className="sc-fzoyAV iqKaHV"
+        >
+          <p
+            className="sc-AxgMl hNugKX"
+            color="black"
+            size="medium"
+          >
+            8
+          </p>
+          <p
+            className="sc-AxgMl hNugKX title-col"
+            color="black"
+            size="medium"
+          >
+            D.C
+          </p>
+          <p
+            className="sc-AxgMl hNugKX"
+            color="black"
+            size="medium"
+          >
+            £20.00
+          </p>
+        </div>
+        <div
+          className="sc-fzoyAV iqKaHV"
+        >
+          <p
+            className="sc-AxgMl hNugKX"
+            color="black"
+            size="medium"
+          >
+            9
+          </p>
+          <p
+            className="sc-AxgMl hNugKX title-col"
+            color="black"
+            size="medium"
+          >
+            P.D
+          </p>
+          <p
+            className="sc-AxgMl hNugKX"
+            color="black"
+            size="medium"
+          >
+            £10.00
+          </p>
+        </div>
+        <div
+          className="sc-fzoyAV iqKaHV"
+        >
+          <p
+            className="sc-AxgMl hNugKX"
+            color="black"
+            size="medium"
+          >
+            10
+          </p>
+          <p
+            className="sc-AxgMl hNugKX title-col"
+            color="black"
+            size="medium"
+          >
+            L.M
+          </p>
+          <p
+            className="sc-AxgMl hNugKX"
+            color="black"
+            size="medium"
+          >
+            £5.00
+          </p>
+        </div>
+      </div>
+      <hr
+        className="sc-fzoLag glSwtt"
+      />
+      <p
+        className="sc-AxgMl hAcpTm"
+        color="black"
+        size="medium"
+      >
+        The search for gold starts in the Sahara Desert! There’s potential for big cash prizes of up to 1,000 your stake with the Free Spins feature so you’ll want to stock up on those Story Book Free Spin Symbols to get your chance.
+      </p>
+    </section>
+    <section
+      className="sc-fznxsB eHbfNH"
+    >
+      <h2
+        className="sc-fzplWN iXNTEK"
+        color="#091870"
+      >
+        Include Games
+      </h2>
+      <div
+        className="sc-fznJRM jDLJkX"
+      >
+        <img
+          alt="First Game"
+          className="sc-fznWqX eawpKR"
+          src="https://i.imgur.com/gmXp0zM.jpg"
+        />
+        <img
+          alt="Second Game"
+          className="sc-fznWqX eawpKR"
+          src="https://i.imgur.com/ecK4twD.jpg"
+        />
+        <img
+          alt="Third Game"
+          className="sc-fznWqX eawpKR"
+          src="https://i.imgur.com/kn70JZB.jpg"
+        />
+        <img
+          alt="Fourth Game"
+          className="sc-fznWqX eawpKR"
+          src="https://i.imgur.com/F6XZ6v5.jpg"
+        />
+        <img
+          alt="Fifth Game"
+          className="sc-fznWqX eawpKR"
+          src="https://i.imgur.com/4RKCXxe.jpg"
+        />
+        <img
+          alt="Sixth Game"
+          className="sc-fznWqX eawpKR"
+          src="https://i.imgur.com/lVq9s16.jpg"
+        />
+      </div>
+    </section>
+    <section
+      className="sc-fzqARJ HzTVw"
+    >
+      <h2
+        className="sc-fzplWN iXNTEK"
+        color="#091870"
+      >
+        Terms & Conditions
+      </h2>
+      <ul
+        className="sc-fzqNqU hKszzv"
+      >
+        <li
+          className="sc-fzoiQi fiyQgO"
+        >
+          Advertising is key factor in your web site promotion. Let people talk about you, your products, and your services.
+        </li>
+        <li
+          className="sc-fzoiQi fiyQgO"
+        >
+          You see, people are always on the look out for good content right? Your site should have really good contents. Don’t write
+        </li>
+        <li
+          className="sc-fzoiQi fiyQgO"
+        >
+          “Welcome to my website” or “Ours is a World’s first company…blah blah” unless and until you really have dominating product.
+           
+        </li>
+        <li
+          className="sc-fzoiQi fiyQgO"
+        >
+          You sell your products or services as like others, but you think you must be noticed.
+           
+        </li>
+        <li
+          className="sc-fzoiQi fiyQgO"
+        >
+          Your offer should be different to attract visitor. Your presentation should be mind catching.
+           
+        </li>
+        <li
+          className="sc-fzoiQi fiyQgO"
+        >
+          Get aware of advertisers online. There are few major players around.
+           
+        </li>
+      </ul>
+    </section>
+  </div>
+  <footer
+    className="sc-fzoXWK fhIusW"
+  >
+    <div
+      className="sc-fzoyTs hBZjfp"
+    >
+      <p
+        className="sc-AxgMl djfOpo"
+        color="#f9cb11"
+        size="medium"
+      >
+        Share this Tournament
+      </p>
+      <div
+        className="sc-fzoNJl kVeiHh"
+      >
+        <img
+          className="sc-fznKkj flgnqk"
+          src="twitter.svg"
+        />
+        <img
+          className="sc-fznKkj flgnqk"
+          src="facebook.svg"
+        />
+      </div>
+    </div>
+  </footer>
+</div>
+`;

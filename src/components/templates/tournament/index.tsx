@@ -41,7 +41,7 @@ const Tournament: React.FunctionComponent<Props> = (props) => {
   };
   return (
     <Container>
-      <Info {...infoProps} />
+      <Info {...infoProps} test={props.test} />
       <TextContainer>
         <PrizeList
           {...prizeListProps}
