@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ATOMS: Render testing Should render Hr 1`] = `
+<div>
+  <div
+    className="sc-AxirZ svjdj"
+  >
+    <p
+      className="sc-AxjAm hzarxW"
+      color="#17dfe7"
+      size="small"
+    >
+      prize pool
+    </p>
+    <p
+      className="sc-AxjAm jPqnYf"
+      color="white"
+      size="large"
+    >
+      £25,000.00
+    </p>
+  </div>
+  <br />
+  <div
+    className="sc-AxirZ svjdj"
+  >
+    <p
+      className="sc-AxjAm hzarxW"
+      color="#17dfe7"
+      size="small"
+    >
+      player
+    </p>
+    <div
+      className="sc-AxiKw iRXjVE"
+    >
+      <img
+        className="sc-AxhCb ccMvAG"
+        src="user.svg"
+      />
+      <p
+        className="sc-AxjAm jPqnYf"
+        color="white"
+        size="large"
+      >
+        359
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ATOMS: Render testing Should render PoolInfo 1`] = `
+<div>
+  <div
+    className="sc-AxirZ svjdj"
+  >
+    <p
+      className="sc-AxjAm hzarxW"
+      color="#17dfe7"
+      size="small"
+    >
+      prize pool
+    </p>
+    <p
+      className="sc-AxjAm jPqnYf"
+      color="white"
+      size="large"
+    >
+      £25,000.00
+    </p>
+  </div>
+  <br />
+  <div
+    className="sc-AxirZ svjdj"
+  >
+    <p
+      className="sc-AxjAm hzarxW"
+      color="#17dfe7"
+      size="small"
+    >
+      player
+    </p>
+    <div
+      className="sc-AxiKw iRXjVE"
+    >
+      <img
+        className="sc-AxhCb ccMvAG"
+        src="user.svg"
+      />
+      <p
+        className="sc-AxjAm jPqnYf"
+        color="white"
+        size="large"
+      >
+        359
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`MOLECULES: Render testing Should render PoolInfo 1`] = `
+<div>
+  <div
+    className="sc-AxirZ svjdj"
+  >
+    <p
+      className="sc-AxjAm hzarxW"
+      color="#17dfe7"
+      size="small"
+    >
+      prize pool
+    </p>
+    <p
+      className="sc-AxjAm jPqnYf"
+      color="white"
+      size="large"
+    >
+      £25,000.00
+    </p>
+  </div>
+  <br />
+  <div
+    className="sc-AxirZ svjdj"
+  >
+    <p
+      className="sc-AxjAm hzarxW"
+      color="#17dfe7"
+      size="small"
+    >
+      player
+    </p>
+    <div
+      className="sc-AxiKw iRXjVE"
+    >
+      <img
+        className="sc-AxhCb ccMvAG"
+        src="user.svg"
+      />
+      <p
+        className="sc-AxjAm jPqnYf"
+        color="white"
+        size="large"
+      >
+        359
+      </p>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,778 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ATOMS: Render testing Should render Hr 1`] = `
+<div>
+  <div
+    className="sc-AxirZ gdibQh"
+  >
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        1
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        P.C
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £2,500.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        2
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        J.S
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £1,250.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        3
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        H.J
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £700.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        4
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        J.V
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £300.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        5
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        L.K
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £100.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        6
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        H.D
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £50.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        7
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        V.G
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £35.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        8
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        D.C
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £20.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        9
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        P.D
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £10.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        10
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        L.M
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £5.00
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ATOMS: Render testing Should render List 1`] = `
+<div>
+  <div
+    className="sc-AxirZ gdibQh"
+  >
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        1
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        P.C
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £2,500.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        2
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        J.S
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £1,250.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        3
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        H.J
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £700.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        4
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        J.V
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £300.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        5
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        L.K
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £100.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        6
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        H.D
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £50.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        7
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        V.G
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £35.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        8
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        D.C
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £20.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        9
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        P.D
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £10.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        10
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        L.M
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £5.00
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`MOLECULES: Render testing Should render List 1`] = `
+<div>
+  <div
+    className="sc-AxirZ gdibQh"
+  >
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        1
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        P.C
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £2,500.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        2
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        J.S
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £1,250.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        3
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        H.J
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £700.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        4
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        J.V
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £300.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        5
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        L.K
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £100.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        6
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        H.D
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £50.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        7
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        V.G
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £35.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        8
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        D.C
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £20.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        9
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        P.D
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £10.00
+      </p>
+    </div>
+    <div
+      className="sc-AxiKw hrigKI"
+    >
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        10
+      </p>
+      <p
+        className="sc-AxjAm DSefD title-col"
+        color="black"
+        size="medium"
+      >
+        L.M
+      </p>
+      <p
+        className="sc-AxjAm DSefD"
+        color="black"
+        size="medium"
+      >
+        £5.00
+      </p>
+    </div>
+  </div>
+</div>
+`;
