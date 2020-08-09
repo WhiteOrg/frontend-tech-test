@@ -14,7 +14,7 @@ const Container = styled.div`
 const IconRow = styled.div`
   display: flex;
   justify-content: space-around;
-  width: 55%;
+  width: 70%;
 `;
 
 const Social: React.FunctionComponent = (props) => (
