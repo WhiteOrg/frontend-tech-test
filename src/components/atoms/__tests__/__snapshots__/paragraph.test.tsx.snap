@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ATOMS: Render testing Should render paragraph 1`] = `
+<div>
+  <p
+    className="sc-AxjAm dHkAvS"
+    color="#17dfe7"
+    size="small"
+  >
+    PRIZE POOL
+  </p>
+  <p
+    className="sc-AxjAm DSefD"
+    size="medium"
+  >
+    P.C
+  </p>
+  <p
+    className="sc-AxjAm itERZv"
+    color="white"
+    size="large"
+  >
+    £25,000.00
+  </p>
+  <p
+    className="sc-AxjAm qAnnS"
+  >
+     
+    The search for gold starts in the Sahara Desert! There’s potential for big cash prizes of up to 1,000 your stake with the Free Spins feature so you’ll want to stock up on those Story Book Free Spin Symbols to get your chance.
+     
+  </p>
+</div>
+`;

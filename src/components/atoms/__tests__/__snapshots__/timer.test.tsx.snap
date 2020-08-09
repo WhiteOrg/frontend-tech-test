@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ATOMS: Render testing Should render Timer 1`] = `
+<div>
+  <div
+    className="sc-AxirZ hqRJJG"
+  >
+    <div
+      className="sc-AxjAm crHSQi"
+    />
+    <p
+      className="sc-AxiKw dPBvyy"
+    >
+      7
+    </p>
+  </div>
+</div>
+`;
