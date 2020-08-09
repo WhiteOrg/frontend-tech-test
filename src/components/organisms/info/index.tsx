@@ -65,7 +65,7 @@ const Info: React.FunctionComponent<PropsInfo> = (props) => (
       <TitleH1 color="white">{props.title}</TitleH1>
       <Icon src={close} />
     </TitleRow>
-    <CountDown endDate={props.endDate} />
+    <CountDown startDate={props.startDate} />
     <InfoRow>
       <PoolInfo title="prizePool" info={props.prizePool} />
       <PoolInfo title="player" info={props.players.toString()} icon={user} />

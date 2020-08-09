@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Timer from "../../atoms/timer";
 
 type Props = {
-  endDate: string;
+  startDate: string;
 };
 
 const Container = styled.div`
@@ -21,10 +21,10 @@ const Text = styled.p`
 
 const CountDown: React.FunctionComponent<Props> = (props) => {
   const calculateTimeLeft = () => {
-    let startDate = new Date();
-    let endDate = new Date(props.endDate);
+    let now = new Date();
+    let startDate = new Date(props.startDate);
 
-    const difference = +endDate - +startDate;
+    const difference = +startDate - +now;
 
     if (difference > 0) {
       return {

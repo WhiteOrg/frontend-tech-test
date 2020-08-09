@@ -5,17 +5,17 @@ export default {
   title: "Molecules",
 };
 
-let endDate = "2020-08-15T10:06:29.578Z";
+let startDate = "2020-08-08T10:06:29.578Z";
 const now = new Date();
-const end = new Date(endDate);
-const diff = +end - +now;
+const start = new Date(startDate);
+const diff = +start - +now;
 if (diff <= 0) {
-  end.setDate(end.getDate() + 7);
-  endDate = end.toDateString();
+  start.setDate(start.getDate() + 7);
+  startDate = start.toDateString();
 }
 
 export const countdown = () => (
   <div>
-    <Countdown endDate={endDate} />
+    <Countdown startDate={startDate} />
   </div>
 );
