@@ -10,14 +10,14 @@ import close from "../../../images/close.svg";
 import user from "../../../images/user.svg";
 import calendar from "../../../images/calendar.svg";
 
-type Props = {
+export interface PropsInfo {
   readonly title: string;
   readonly prizePool: string;
   readonly players: number;
   readonly startDate: string;
   readonly endDate: string;
   readonly backgroundImage: string;
-};
+}
 
 interface PropsContainer {
   readonly backgroundImage: string;
@@ -59,7 +59,7 @@ const InfoRow = styled.div`
   }
 `;
 
-const Info: React.FunctionComponent<Props> = (props) => (
+const Info: React.FunctionComponent<PropsInfo> = (props) => (
   <Container backgroundImage={props.backgroundImage}>
     <TitleRow>
       <TitleH1 textColor="white">{props.title}</TitleH1>

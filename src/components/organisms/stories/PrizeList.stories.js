@@ -7,7 +7,7 @@ export default {
 };
 
 const data = {
-  title: "Prize List",
+  titlePrizeList: "Prize List",
   prizeList: [
     {
       title: "P.C",

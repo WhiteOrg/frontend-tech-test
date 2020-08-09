@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { TitleH2 } from "../../atoms/title";
 import Bullet from "../../atoms/bullet";
 
-type Props = {
-  readonly title: string;
-};
+export interface PropsTermsCondition {
+  readonly titleTermsCondition: string;
+}
 
 const Container = styled.section`
   display: flex;
@@ -21,9 +21,11 @@ const TermsList = styled.ul`
   }
 `;
 
-const TermsCondition: React.FunctionComponent<Props> = (props) => (
+const TermsCondition: React.FunctionComponent<PropsTermsCondition> = (
+  props
+) => (
   <Container>
-    <TitleH2 textColor="#091870">{props.title}</TitleH2>
+    <TitleH2 textColor="#091870">{props.titleTermsCondition}</TitleH2>
     <TermsList>
       <Bullet>
         Advertising is key factor in your web site promotion. Let people talk

@@ -7,13 +7,13 @@ import Hr from "../../atoms/hr";
 import Icon from "../../atoms/icon";
 import { Prize } from "../../types";
 
-type Props = {
-  readonly title: string;
+export interface PropsPrizeList {
+  readonly titlePrizeList: string;
   readonly prizeList: Prize[];
   readonly refresh: string;
   readonly detail: string;
   readonly rotate: boolean;
-};
+}
 
 const Container = styled.section`
   display: flex;
@@ -25,10 +25,10 @@ const TitleRow = styled.div`
   justify-content: space-between;
 `;
 
-const PrizeList: React.FunctionComponent<Props> = (props) => (
+const PrizeList: React.FunctionComponent<PropsPrizeList> = (props) => (
   <Container>
     <TitleRow>
-      <TitleH2 textColor="#091870">{props.title}</TitleH2>
+      <TitleH2 textColor="#091870">{props.titlePrizeList}</TitleH2>
       <Icon src={props.refresh} rotate={props.rotate} />
     </TitleRow>
     <Hr />

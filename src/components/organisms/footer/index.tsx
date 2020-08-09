@@ -6,7 +6,8 @@ const Container = styled.footer`
   display: flex;
   justify-content: center;
   background-image: linear-gradient(to top, #158dd4, #56169b);
-  padding: 20px;
+  padding-top: 20px;
+  height: 150px;
 `;
 
 const Footer: React.FunctionComponent = (props) => (

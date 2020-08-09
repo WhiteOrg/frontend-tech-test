@@ -6,7 +6,7 @@ export default {
 };
 
 const data = {
-  title: "Include Games",
+  titleGamesList: "Include Games",
   games: [
     {
       title: "First Game",

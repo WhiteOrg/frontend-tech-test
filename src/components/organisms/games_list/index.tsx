@@ -3,10 +3,10 @@ import styled from "styled-components";
 import { TitleH2 } from "../../atoms/title";
 import { Game } from "../../types";
 
-type Props = {
-  readonly title: string;
+export interface PropsGamesList {
+  readonly titleGamesList: string;
   readonly games: Game[];
-};
+}
 
 const Container = styled.section`
   display: flex;
@@ -24,14 +24,14 @@ const GameImage = styled.img`
   width: 48%;
   padding-bottom: 10px;
   @media (min-width: 1200px) {
-    width: 32%;
+    max-width: 32%;
     padding-bottom: 30px;
   }
 `;
 
-const GamesList: React.FunctionComponent<Props> = (props) => (
+const GamesList: React.FunctionComponent<PropsGamesList> = (props) => (
   <Container>
-    <TitleH2 textColor="#091870">{props.title}</TitleH2>
+    <TitleH2 textColor="#091870">{props.titleGamesList}</TitleH2>
     <GameList>
       {props.games.map(({ title, src }) => (
         <GameImage src={src} alt={title} />

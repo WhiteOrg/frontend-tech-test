@@ -6,5 +6,5 @@ export default {
 };
 
 export const terms_condition = () => (
-  <TermsCondition title="Terms & Conditions" />
+  <TermsCondition titleTermsCondition="Terms & Conditions" />
 );
