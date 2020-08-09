@@ -14,6 +14,7 @@ export interface PropsPrizeList {
   readonly refresh?: string;
   readonly description: string;
   readonly rotate: number;
+  onClick: () => void;
 }
 
 const Container = styled.section`
@@ -33,7 +34,11 @@ const PrizeList: React.FunctionComponent<PropsPrizeList> = (props) => (
   <Container>
     <TitleRow>
       <TitleH2 color="#091870">{props.titlePrizeList}</TitleH2>
-      <Icon src={props.refresh || refresh} rotate={props.rotate} />
+      <Icon
+        src={props.refresh || refresh}
+        rotate={props.rotate}
+        onClick={props.onClick}
+      />
     </TitleRow>
     <Hr />
     <List prizeList={props.prizeList} />

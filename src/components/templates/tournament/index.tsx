@@ -43,7 +43,11 @@ const Tournament: React.FunctionComponent<Props> = (props) => {
     <Container>
       <Info {...infoProps} />
       <TextContainer>
-        <PrizeList {...prizeListProps} rotate={props.rotate} />
+        <PrizeList
+          {...prizeListProps}
+          rotate={props.rotate}
+          onClick={props.onClick}
+        />
         <GameList titleGamesList={props.titleGamesList} games={props.games} />
         <TermsCondition titleTermsCondition={props.titleTermsCondition} />
       </TextContainer>
