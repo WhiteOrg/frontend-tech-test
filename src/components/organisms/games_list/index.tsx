@@ -33,8 +33,8 @@ const GamesList: React.FunctionComponent<PropsGamesList> = (props) => (
   <Container>
     <TitleH2 textColor="#091870">{props.titleGamesList}</TitleH2>
     <GameList>
-      {props.games.map(({ title, src }) => (
-        <GameImage src={src} alt={title} />
+      {props.games.map(({ title, src }, index) => (
+        <GameImage key={index} src={src} alt={title} />
       ))}
     </GameList>
   </Container>

@@ -1,9 +1,11 @@
 import React from "react";
+import { withKnobs, number } from "@storybook/addon-knobs";
 import PrizeList from "../prize_list";
 import refresh from "../../../images/refresh.svg";
 
 export default {
   title: "Organisms",
+  decorators: [withKnobs],
 };
 
 const data = {
@@ -53,7 +55,8 @@ const data = {
   refresh,
   detail:
     "The search for gold starts in the Sahara Desert! There’s potential for big cash prizes of up to 1,000 your stake with the Free Spins feature so you’ll want to stock up on those Story Book Free Spin Symbols to get your chance. ",
-  rotate: false,
 };
 
-export const prize_list = () => <PrizeList {...data} />;
+export const prize_list = () => (
+  <PrizeList {...data} rotate={number("Rotate", 0)} />
+);

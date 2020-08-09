@@ -1,7 +1,7 @@
 import styled, { keyframes, css } from "styled-components";
 
 interface Props {
-  readonly rotate: boolean;
+  readonly rotate: number;
 }
 
 const rotation = keyframes`
@@ -21,7 +21,7 @@ const injectAnimation = css`
 const Icon = styled.img<Props>`
   cursor: pointer;
   transition: all 0.3s;
-  ${({ rotate }) => rotate && injectAnimation}
+  ${({ rotate }) => rotate === 1 && injectAnimation}
 
   &:hover {
     opacity: 0.8;

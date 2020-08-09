@@ -12,7 +12,7 @@ export interface PropsPrizeList {
   readonly prizeList: Prize[];
   readonly refresh: string;
   readonly detail: string;
-  readonly rotate: boolean;
+  readonly rotate: number;
 }
 
 const Container = styled.section`
@@ -23,6 +23,9 @@ const Container = styled.section`
 const TitleRow = styled.div`
   display: flex;
   justify-content: space-between;
+  & > img {
+    width: 30px;
+  }
 `;
 
 const PrizeList: React.FunctionComponent<PropsPrizeList> = (props) => (

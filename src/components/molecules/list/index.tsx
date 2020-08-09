@@ -55,7 +55,7 @@ const List: React.FunctionComponent<Props> = ({ prizeList }) => {
   return (
     <Container>
       {prizeList.map((prize, index) => (
-        <Row>
+        <Row key={index}>
           <Paragraph size="medium" textColor="black" bold>
             {index + 1}
           </Paragraph>

@@ -1,8 +1,8 @@
 import React from "react";
+import { withKnobs, number } from "@storybook/addon-knobs";
 import Icon from "../icon";
 import fbLogo from "../../../images/facebook.svg";
 import refreshIcon from "../../../images/refresh.svg";
-import { withKnobs, boolean } from "@storybook/addon-knobs";
 
 export default {
   title: "Atoms",
@@ -16,7 +16,7 @@ export const icon = () => (
     </div>
     <br />
     <div>
-      <Icon src={refreshIcon} rotate={boolean("Rotate", true)} />
+      <Icon src={refreshIcon} rotate={number("Rotate", 1)} />
     </div>
   </div>
 );
