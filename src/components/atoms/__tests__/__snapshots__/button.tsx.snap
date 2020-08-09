@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ATOMS: Render testing Should render Button 1`] = `
+<div>
+  <button
+    className="sc-AxjAm dddBUv"
+  >
+    Join
+  </button>
+</div>
+`;
+
+exports[`ATOMS: Render testing Should render bullet 1`] = `
+<div>
+  <button
+    className="sc-AxjAm dddBUv"
+  >
+    Join
+  </button>
+</div>
+`;
+
+exports[`ATOMS: Render testing Should render button 1`] = `
+<div>
+  <button
+    className="sc-AxjAm dddBUv"
+  >
+    Join
+  </button>
+</div>
+`;

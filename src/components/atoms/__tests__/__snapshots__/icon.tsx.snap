@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ATOMS: Render testing Should render Hr 1`] = `
+<div>
+  <div>
+    <img
+      className="sc-AxjAm ibFeGD"
+      src="facebook.svg"
+    />
+  </div>
+  <br />
+  <div>
+    <img
+      className="sc-AxjAm kOqVvG"
+      rotate={1}
+      src="refresh.svg"
+    />
+  </div>
+</div>
+`;
+
+exports[`ATOMS: Render testing Should render Icon 1`] = `
+<div>
+  <div>
+    <img
+      className="sc-AxjAm ibFeGD"
+      src="facebook.svg"
+    />
+  </div>
+  <br />
+  <div>
+    <img
+      className="sc-AxjAm kOqVvG"
+      rotate={1}
+      src="refresh.svg"
+    />
+  </div>
+</div>
+`;

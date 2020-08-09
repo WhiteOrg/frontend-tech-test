@@ -48,6 +48,9 @@
     "@storybook/addon-storysource": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/preset-create-react-app": "^3.1.4",
-    "@storybook/react": "^5.3.19"
+    "@storybook/react": "^5.3.19",
+    "@types/react-test-renderer": "^16.9.3",
+    "react-test-renderer": "^16.13.1",
+    "ts-jest": "^26.1.4"
   }
 }

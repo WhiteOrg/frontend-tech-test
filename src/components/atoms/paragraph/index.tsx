@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 interface Props {
-  readonly size: "small" | "medium" | "large";
-  readonly color: string;
+  readonly size?: "small" | "medium" | "large";
+  readonly color?: string;
   readonly upperCase?: boolean;
   readonly bold?: boolean;
 }

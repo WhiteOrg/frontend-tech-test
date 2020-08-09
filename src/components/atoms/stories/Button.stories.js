@@ -7,9 +7,6 @@ export default {
 
 export const button = () => (
   <div>
-    <div>
-      <Button>Join</Button>
-    </div>
-    <br />
+    <Button>Join</Button>
   </div>
 );

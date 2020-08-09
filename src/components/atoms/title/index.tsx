@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface Props {
-  readonly color: string;
+  readonly color?: string;
 }
 
 const TitleH1 = styled.h1<Props>`
