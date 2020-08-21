@@ -75,7 +75,7 @@ Your solution should:
 - Match the provided designs as closely as possible;
 - Make use of modern CSS layout techniques;
 - Be built from reusable UI components;
-- Show an understanding of core React concepts such as `props`;
+- Show an understanding of both core React concepts such as `props` and modern development practices/techniques, such as `async/await` and React Hooks;
 - Retrieve the necessary information from the provided API endpoint or gracefully fail if the request returns an error;
 - Use semantic code wherever possible, including HTML5 elements and human-readable variable naming;
 - Be accessible for all users.
