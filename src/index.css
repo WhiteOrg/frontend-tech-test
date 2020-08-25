@@ -38,3 +38,8 @@ code {
 section {
     padding: 45px 10px;
 }
+
+section p {
+    font-size: 20px;
+    line-height: 30px;
+}
