@@ -68,3 +68,26 @@
 		transform: rotate(360deg);
 	}
 } */
+
+@media screen and (min-width: 700px) {
+    .prize-list {
+        padding: 75px 140px 50px 75px;
+    }
+
+    .prize-list h2 {
+        margin-bottom: 30px;
+    }
+
+    .refresh {
+        height: 45px;
+        width: 45px;
+        font-size: 20px;
+    }
+
+    .score-board {
+        border-width: 12px;
+        padding: 45px 0;
+        font-size: 30px;
+    }
+    
+}
