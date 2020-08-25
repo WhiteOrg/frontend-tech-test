@@ -25,3 +25,17 @@
     max-width: 100%;
     vertical-align: middle;
 }
+
+@media screen and (min-width: 700px) {
+    .game-list h2 {
+        margin-bottom: 35px;
+    }
+
+    .game-list ul {
+        margin: -15px;
+    }
+    .game-list li {
+        margin: 15px;
+        width: calc(33.333333333333333% - 30px);
+    }
+}

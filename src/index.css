@@ -56,4 +56,18 @@ section ul {
         margin-bottom: 33px;
     }
 
+    h2 {
+        font-size: 55px;
+    }
+
+    section {
+        padding: 45px 140px 75px;
+    }    
+
+    section ul,
+    section p {
+        font-size: 32px;
+        line-height: 35px;
+    }
+
 }
