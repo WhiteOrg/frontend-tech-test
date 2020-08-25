@@ -1,0 +1,70 @@
+
+.prize-list {
+    padding-bottom: 0;
+}
+
+.prize-list h2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.score-board {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    border-top: 5px solid #F3F3FD ;
+    border-bottom: 5px solid #F3F3FD ;
+    padding: 25px 0;
+}
+
+.score-board ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: scroll;
+    max-height: 310px;
+    -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
+}
+
+.score-board li {
+    border-bottom: 2px solid #F3F3FD ;
+    padding: 12px 0 12px 13px;
+    display: flex;
+}
+
+.score-board li:last-child {
+    border-bottom: none;
+}
+
+.score-board .total {
+    margin-left: auto;
+}
+
+.score-board .rank {
+    width: 65px
+}
+
+.refresh {
+    border:none;
+    background-color:#001C62;
+    color:#fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .refresh svg {
+    animation: App-logo-spin infinite 5s linear;
+} */
+/* 
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+} */
