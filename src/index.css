@@ -39,7 +39,12 @@ section {
     padding: 45px 10px;
 }
 
+section ul,
 section p {
     font-size: 20px;
     line-height: 30px;
+}
+
+section ul {
+    padding-left: 25px;
 }

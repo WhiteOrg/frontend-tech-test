@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaFacebook, FaTwitter } from 'react-icons/fa'
+import './Footer.css';
 
 const Footer = () => {
 
@@ -17,8 +19,10 @@ const Footer = () => {
             </section>
             <footer>
                 <h3>Share this Tournament</h3>
-
-
+                <ul className="icons">
+                    <li><a href="https://github.com/WhiteOrg/frontend-tech-test"><FaTwitter /></a></li>
+                    <li><a href="https://github.com/WhiteOrg/frontend-tech-test"><FaFacebook /></a></li>
+                </ul>
             </footer>
         </React.Fragment>
     );

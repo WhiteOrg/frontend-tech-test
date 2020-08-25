@@ -1,0 +1,26 @@
+footer {
+    background: linear-gradient(to bottom, #006bbb 0%,#2b40a3 100%);
+    text-align: center;
+    padding: 50px 0;
+}
+
+footer h3 {
+    color: #FFC135;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.icons {
+    padding: 0;
+    margin: 0;
+}
+
+.icons li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+footer svg {
+    color: #fff;
+    font-size: 75px;
+}
