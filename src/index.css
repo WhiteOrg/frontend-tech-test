@@ -61,13 +61,13 @@ section ul {
     }
 
     section {
-        padding: 45px 140px 75px;
+        padding: 70px 140px 75px;
     }    
 
     section ul,
     section p {
         font-size: 32px;
-        line-height: 35px;
+        line-height: 45px;
     }
 
 }

@@ -24,3 +24,17 @@ footer svg {
     color: #fff;
     font-size: 75px;
 }
+
+@media screen and (min-width: 700px) {
+    footer {
+        padding: 60px 0;
+    }
+
+    footer h3 {
+        font-size: 28px;
+    }
+
+    .icons li {
+        margin: 0 10px;
+    }
+}
