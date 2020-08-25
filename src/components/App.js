@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import "./App.css";
 import Header from './Header';
 import { connect } from 'react-redux';
 import { fetchGames } from '../actions';
@@ -20,7 +19,9 @@ const App = props => {
 		<React.Fragment>
 			<Header />
 			<PrizeList />
-			<p>{props.content.description}</p>
+			<section>
+				<p>{props.content.description}</p>
+			</section>
 			<GameList />
 			<Footer />
 		</React.Fragment>

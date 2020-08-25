@@ -16,13 +16,13 @@ const PrizeList = ({ prizes, fetchGames }) => {
     }
 
     return (
-        <div>
+        <section>
             <h2>Prize List</h2>
             <button onClick={onRefresh}>refresh</button>
             <ol>
                 {(prizes) ? renderList() : null}
             </ol>
-        </div>
+        </section>
     );
 
 }

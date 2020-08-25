@@ -25,20 +25,18 @@ const Countdown = ({ startDate, endDate }) => {
         Object.keys(remainingTime).forEach((interval) => {
             if (!remainingTime[interval]) return;
             countdown.push(
-                <span key={interval}>
-                    {remainingTime[interval]} {interval}{" "}
-                </span>
+                <React.Fragment><span key={interval} className="unit">{remainingTime[interval]}</span>{interval} </React.Fragment >
             );
         });
         return countdown;
     };
 
     if (startDate > currentDate) {
-        return renderCountDown();
+        return <p className="countdown">Starts at {renderCountDown()}</p>
     } else if (currentDate > startDate && currentDate < endDate) {
-        return 'Tournament In progress...'
+        return <p className="countdown">Tournament is now in progress...</p>
     } else {
-        return 'expired'
+        return <p className="countdown">Tournament has expired</p>
     }
 
 };

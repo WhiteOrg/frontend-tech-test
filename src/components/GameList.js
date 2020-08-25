@@ -11,12 +11,12 @@ const GameList = ({ games }) => {
 
 
     return (
-        <div>
+        <section>
             <h2>Include Games</h2>
             <ol>
                 {(games) ? renderList() : null}
             </ol>
-        </div>
+        </section>
     );
 
 }

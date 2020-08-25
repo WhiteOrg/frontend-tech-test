@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { FaTimesCircle, FaUser, FaCalendarAlt, FaTimes } from 'react-icons/fa'
+import { IoIosClose } from 'react-icons/io'
 import { connect } from 'react-redux';
 import { addDays } from '../helpers'
 
 import Countdown from './Countdown'
+import './Header.css';
 
 
 const Header = props => {
@@ -20,29 +23,34 @@ const Header = props => {
 
     const renderStartDate = () => {
         return `Starts on 
-        ${startDate.toLocaleString('default', { weekday: 'short' })} , 
+        ${startDate.toLocaleString('default', { weekday: 'short' })}, 
         ${startDate.getDate()}
         ${startDate.toLocaleString('default', { month: 'short' })} 
         ${startDate.getFullYear()}, 
-        ${startDate.getHours()}:${startDate.getMinutes()} GMT`;
+        ${startDate.getHours()}:${startDate.getMinutes()}:${startDate.getHours()}:${startDate.getSeconds()} GMT`;
     };
 
     return (
         <header style={{ backgroundImage: `url(${backgroundImage})` }}>
-            <h1>{title}</h1>
+
+            <div className="top">
+                <h1>{title}</h1>
+                <button className="close">
+                    <IoIosClose />
+                </button>
+            </div>
 
             <Countdown startDate={startDate} endDate={endDate} />
 
-
-            <ul>
+            <ul className="list">
                 <li><b>Prize Pool</b> {prizePool}</li>
-                <li><b>Player</b> {players}</li>
+                <li><b>Player</b> <FaUser size={25} />{players}</li>
             </ul>
 
-            <p>{renderStartDate()}</p>
+            <p className="start-date"><FaCalendarAlt />{renderStartDate()}</p>
 
-            <a href="https://github.com/WhiteOrg/frontend-tech-test">Join</a>
-        </header>
+            <a href="https://github.com/WhiteOrg/frontend-tech-test" className="cta">Join</a>
+        </header >
     )
 
 };
