@@ -11,9 +11,10 @@ import './Header.css';
 const Header = props => {
 
     const { title, prizePool, players, backgroundImage } = props.content;
+
+    //Setting up dummy dates instead of actual dates from API. This is as per requirements/instructions given to me.
     const [startDate, setStartDate] = useState(new Date());
     const [endDate, setEndDate] = useState(new Date());
-
 
     useEffect(() => {
         setStartDate(addDays(startDate, 7))
