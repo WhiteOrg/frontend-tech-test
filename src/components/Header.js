@@ -45,7 +45,7 @@ const Header = props => {
 
             <ul className="list">
                 <li><b>Prize Pool</b> {prizePool}</li>
-                <li><b>Player</b> <FaUser size={25} />{players}</li>
+                <li><b>Player</b> <FaUser className="icon" />{players}</li>
             </ul>
 
             <p className="start-date"><FaCalendarAlt />{renderStartDate()}</p>

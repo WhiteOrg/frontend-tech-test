@@ -48,3 +48,12 @@ section p {
 section ul {
     padding-left: 25px;
 }
+
+@media screen and (min-width: 700px) {
+    h1 {
+        font-size: 90px;
+        font-weight: 800;
+        margin-bottom: 33px;
+    }
+
+}

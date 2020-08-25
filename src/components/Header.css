@@ -83,6 +83,10 @@ header .close svg {
     padding-right: 35px;
 }
 
+.list .icon {
+    font-size: 25px;
+}
+
 header .start-date {
     font-size: 19px;
     font-weight: bold;
@@ -108,4 +112,56 @@ header .cta {
     margin: 0;
     font-size: 25px;
     letter-spacing: 2px;
+}
+
+@media screen and (min-width: 700px) {
+    header {
+        padding: 75px 120px 75px 59px;
+    }
+    header .close {
+        width: 60px;
+        height: 60px;
+
+    }
+
+    .countdown {
+        font-size: 40px;
+        margin-bottom: 155px;
+    }
+
+    .countdown .unit {
+        height: 55px;
+        width: 55px;
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+
+    .list {
+        font-size: 50px;
+        margin-bottom: 35px;
+    }
+
+    .list b {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    
+    .list .icon {
+        font-size: 35px;
+        margin-right: 10px;
+    }
+
+    header .start-date {
+        font-size: 27px;
+        margin-bottom: 60px;
+    }
+
+    header .start-date svg {
+        font-size: 40px;
+    }
+
+    header .cta {
+        display: inline-block;
+        min-width: 600px;
+    }
 }
