@@ -6,6 +6,7 @@ Design mockups are provided through Zeplin. Don't worry if you've never used the
 
 - [Mobile Layout](https://zpl.io/awKqRBd)
 - [Desktop Layout](https://zpl.io/bWO4ovx)
+- [Public Link to Zeplin Images](https://scene.zeplin.io/project/5f1eee9f5d939339d92fdac1)
 
 PS: if you'd prefer not to use Zeplin, both images can be found in the root folder of the repository. We'd recommend Zeplin though, as it will provide you with a lot more information in terms of layout dimensions, design choices, and CSS.
 
