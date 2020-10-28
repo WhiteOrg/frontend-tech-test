@@ -14,7 +14,7 @@ const Countdown = ({ startDate, endDate }) => {
             const remaining = calculateRemaining(getCounterDate());
             setRemainingTime(remaining);
             if (_.isEmpty(remaining)) { clearInterval(timer) };
-        }, 1000 * 60);
+        }, 1000);
 
         // Clear timeout if the component is unmounted
         return () => clearInterval(timer);

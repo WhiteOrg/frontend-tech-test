@@ -13,8 +13,8 @@ export const calculateRemaining = (date, current = new Date()) => {
         remaining = {
             d: Math.floor(time / (1000 * 60 * 60 * 24)),
             h: Math.floor((time / (1000 * 60 * 60)) % 24),
-            m: Math.floor((time / 1000 / 60) % 60)
-            // s: Math.floor(time / 1000) % 60
+            m: Math.floor((time / 1000 / 60) % 60),
+            s: Math.floor(time / 1000) % 60
         }
     }
 
