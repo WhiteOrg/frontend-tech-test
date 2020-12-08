@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Helmet>
-        <title>${appName}</title>
+        <title>{appName}</title>
       </Helmet>
       <Header />
       <main>{children}</main>
