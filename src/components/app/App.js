@@ -1,11 +1,8 @@
 import React from "react";
-import logo from "./images/stech.svg";
-import "./App.css";
 
 function App() {
 	return (
 		<header className="App-header">
-			<img src={logo} className="App-logo" alt="Stech logo." />
 			<h1>Stech Frontend Challenge</h1>
 			<p>
 				Edit <code>src/App.js</code> and save to reload.

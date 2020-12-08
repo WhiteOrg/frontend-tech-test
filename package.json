@@ -11,11 +11,15 @@
     "@types/react-dom": "^16.9.8",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
+    "react-helmet": "^6.1.0",
+    "react-scripts": "^4.0.1",
     "styled-components": "^5.1.1",
     "typescript": "^3.9.7"
   },
   "scripts": {
+    "build:styles": "postcss src/styles/tailwind.css -o src/styles/style.css",
+    "prebuild": "npm run build:styles",
+    "prestart": "npm run build:styles",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -35,5 +39,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.0",
+    "postcss-cli": "^8.3.0",
+    "postcss-import": "^13.0.0",
+    "tailwindcss": "^2.0.1"
   }
 }
