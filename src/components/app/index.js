@@ -1,24 +1,43 @@
 import React, { useState, useEffect } from "react";
 
 import { fetchData } from "../../services";
+import { Loading, LoadingFailed } from "../common";
 
+import PrizeList from "../prize-list";
 import PageDescription from "../page-description";
-import TermsAndConditions from "../terms-and-conditions";
 import GamesList from "../games-list";
+import TermsAndConditions from "../terms-and-conditions";
 
 function App() {
   const [pageData, setPageData] = useState({});
+  const [hasContent, setHasContent] = useState(false);
+  const [failedLoading, setFailedLoading] = useState(false);
 
-  useEffect(() => {
-    const getPageData = async () => {
+  const getPageData = async () => {
+    try {
       const fetchedData = await fetchData();
       await setPageData(fetchedData);
-    };
-
+      setHasContent(true);
+      setFailedLoading(false);
+    } catch (e) {
+      setHasContent(false);
+      setFailedLoading(true);
+    }
+  };
+  useEffect(() => {
     getPageData();
   }, []);
 
-  const {description, games} = {...pageData};
+  const handleRefresh = (e) => {
+    e.preventDefault();
+    setHasContent(false);
+    setFailedLoading(false);
+    setPageData({});
+    getPageData();
+  };
+
+  const { description, games, prizeList } = { ...pageData };
+
   return (
     <>
       <header className="App-header">
@@ -35,8 +54,21 @@ function App() {
           Full Instructions
         </a>
       </header>
-      {description && <PageDescription content={description}/>}
-      {games && <GamesList list={games} />}
+      
+      {!hasContent && !failedLoading ? (
+        <Loading />
+      ) : hasContent && !failedLoading ? (
+        <>
+          {prizeList && (
+            <PrizeList content={prizeList} refreshHandler={handleRefresh} />
+          )}
+          {description && <PageDescription content={description} />}
+          {games && <GamesList content={games} />}
+        </>
+      ) : failedLoading ? (
+        <LoadingFailed />
+      ) : null}
+
       <TermsAndConditions />
     </>
   );
