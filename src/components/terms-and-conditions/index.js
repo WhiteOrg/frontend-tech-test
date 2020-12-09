@@ -1,6 +1,6 @@
 import React from "react";
 
-const TandCs = () => {
+const TermsAndConditions = () => {
   const terms = [
     {
       id: 0,
@@ -34,8 +34,8 @@ const TandCs = () => {
     },
   ];
   return (
-    <section className="container mx-auto px-8 py-16">
-      <h2 className="font-barlow my-6 text-blue-900 text-3xl">Terms &amp; Conditions</h2>
+    <section className="container mx-auto p-8">
+      <h2 className="font-barlow mb-6 font-bold text-blue-900 text-3xl">Terms &amp; Conditions</h2>
       <ul className="list-inside">
         {terms.map((term) => {
           return <li key={term.id} className="list-disc">{term.message}</li>;
@@ -45,4 +45,4 @@ const TandCs = () => {
   );
 };
 
-export default TandCs;
+export default TermsAndConditions;

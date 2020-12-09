@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Header, Footer } from "./common";
+import { Header, Footer } from "../index";
 
 const Layout = ({ children }) => {
   const appName = "Play'n Go Tournament";

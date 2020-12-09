@@ -1,8 +1,11 @@
-import Header from "./Header";
-import Footer from "./Footer";
-import LinkButton from "./LinkButton";
+import Header from "./header";
+import Footer from "./footer";
+import LinkButton from "./link-button";
+import Layout from "./layout";
+
 export {
     Header,
     Footer,
+    Layout,
     LinkButton
 }
