@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Header, Footer } from "../index";
+import { Footer } from "../index";
 
 const Layout = ({ children }) => {
   const appName = "Play'n Go Tournament";
@@ -9,7 +9,6 @@ const Layout = ({ children }) => {
       <Helmet>
         <title>{appName}</title>
       </Helmet>
-      <Header />
       <main>{children}</main>
       <Footer />
     </>

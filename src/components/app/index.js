@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from "react";
 
 import { fetchData } from "../../services";
-import { Loading, LoadingFailed } from "../common";
 
-import PrizeList from "../prize-list";
-import PageDescription from "../page-description";
-import GamesList from "../games-list";
-import TermsAndConditions from "../terms-and-conditions";
+import {
+  Hero,
+  PrizeList,
+  PageDescription,
+  GamesList,
+  TermsAndConditions,
+} from "../index";
+import { Loading, LoadingFailed } from "../common";
 
 function App() {
   const [pageData, setPageData] = useState({});
@@ -24,6 +27,7 @@ function App() {
       setFailedLoading(true);
     }
   };
+
   useEffect(() => {
     getPageData();
   }, []);
@@ -36,29 +40,34 @@ function App() {
     getPageData();
   };
 
-  const { description, games, prizeList } = { ...pageData };
+  const {
+    description,
+    games,
+    prizeList,
+    title,
+    startDate,
+    endDate,
+    prizePool,
+    players,
+    backgroundImage,
+  } = { ...pageData };
+
+  const heroContent = {
+    title,
+    startDate,
+    endDate,
+    prizePool,
+    players,
+    backgroundImage,
+  };
 
   return (
     <>
-      <header className="App-header">
-        <h1>Stech Frontend Challenge</h1>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://github.com/WhiteOrg/frontend-tech-test"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Instructions
-        </a>
-      </header>
-      
       {!hasContent && !failedLoading ? (
         <Loading />
       ) : hasContent && !failedLoading ? (
         <>
+          <Hero content={heroContent}></Hero>
           {prizeList && (
             <PrizeList content={prizeList} refreshHandler={handleRefresh} />
           )}

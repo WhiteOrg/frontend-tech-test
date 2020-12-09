@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const TermsAndConditions = () => {
   const terms = [
@@ -43,6 +44,14 @@ const TermsAndConditions = () => {
       </ul>
     </section>
   );
+};
+
+
+TermsAndConditions.propTypes = {
+  terms: PropTypes.shape({
+    id: PropTypes.number,
+    message: PropTypes.string,
+  }),
 };
 
 export default TermsAndConditions;

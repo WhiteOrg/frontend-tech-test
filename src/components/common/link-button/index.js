@@ -1,7 +1,14 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-const LinkButton = ({ title, href, clickHandler, boxModel = true, children }) => {
-  const classes = boxModel ? "mx-2 my-4" : ""; 
+const LinkButton = ({
+  title,
+  href,
+  clickHandler,
+  boxModel = true,
+  children,
+}) => {
+  const classes = boxModel ? "mx-2 my-4" : "";
   return (
     <a
       href={href}
@@ -12,6 +19,14 @@ const LinkButton = ({ title, href, clickHandler, boxModel = true, children }) =>
       {children}
     </a>
   );
+};
+
+LinkButton.propTypes = {
+  title: PropTypes.string,
+  href: PropTypes.string,
+  clickHandler: PropTypes.func,
+  boxModel: PropTypes.bool,
+  children: PropTypes.object,
 };
 
 export default LinkButton;

@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 import { LinkButton } from "../common";
 
 import refreshLogo from "../../images/refresh.svg";
@@ -35,5 +37,13 @@ const PrizeList = ({ content, refreshHandler}) => {
     </section>
   );
 };
+
+PrizeList.propTypes = {
+  content: PropTypes.shape({
+    title: PropTypes.string,
+    listItem: PropTypes.string,
+  }),
+};
+
 
 export default PrizeList;
