@@ -11,7 +11,7 @@ const TermsAndConditions = () => {
     {
       id: 1,
       message:
-        "You see, people are alwyas on the look out for good content right? Your sit should have really good cotents. Don't write",
+        "You see, people are always on the look out for good content right? Your sit should have really good contents. Don't write",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ const TermsAndConditions = () => {
     {
       id: 3,
       message:
-        "You sell your products or servies as like others, but you think you must be noticed",
+        "You sell your products or services as like others, but you think you must be noticed",
     },
     {
       id: 4,
