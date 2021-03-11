@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 import {ILeaderboardProps} from "../types"
 
 export const Leaderboard = ({prizeList}: ILeaderboardProps) => {

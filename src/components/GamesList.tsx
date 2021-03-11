@@ -1,13 +1,14 @@
 import React from 'react'
+import {IGamesListProps} from "../types"
 
-export const GamesList = () => {
+export const GamesList = ({games}: IGamesListProps) => {
   const renderGames = () => {
-    //loop over games array and render img elements
+    return games?.map(game => <img src={game.src} alt={game.title}/>)
   }
 
   return (
     <div>
-      [pictures go here]
+      {renderGames()}
     </div>
   )
 }
