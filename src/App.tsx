@@ -1,16 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import { Countdown } from "./components/Countdown"
 import { Stats } from "./components/Stats"
 import { Leaderboard } from "./components/Leaderboard"
-import { GamesList } from './components/GamesList'
+import { GamesList } from "./components/GamesList"
+import { fetchData } from "./ApiService"
+import { IApiData } from "./types"
 
 const App = () => {
+
+	const [apiData, setApiData] = React.useState<IApiData | null>();
+
+	useEffect(() => {
+		fetchData().then(data => setApiData(data))
+	}, []);
+
+	console.log(apiData);
+
 	return (
 		<main className="app-container">
 			<section className="game-card-section">
-				<img src=" https://i.imgur.com/W4WBNV2.jpg" />
-				<h1 className="Playn-GO-Title-2-Li">Game title goes here</h1>
+				<img src={apiData?.backgroundImage} alt=""/>
+				<h1 className="Playn-GO-Title-2-Li">{apiData && apiData.title}</h1>
 				<input className="Close" type="button"></input>
 
 				<Countdown />
@@ -18,20 +29,20 @@ const App = () => {
 				<Stats />
 
 				<div className="start-date-container">
-					<time className="start-date" dateTime="......">2020-08-06T10:06:29.578Z"</time>
+					<time className="start-date" dateTime={apiData ? apiData.startDate : ""}>{ apiData && apiData.startDate }</time>
 				</div>
 
 				<button className="join-button">JOIN</button>
 			</section>
 
 			<section className="leaderboard-section">
-				<Leaderboard />
-				<p>The search for gold starts in the Sahara Desert! There’s potential for big cash prizes of up to 1,000 your stake with the Free Spins feature so you’ll want to stock up on those Story Book Free Spin Symbols to get your chance. </p>
+				<Leaderboard prizeList={apiData && apiData.prizeList} />
+				<p className="description">{apiData && apiData.description}</p>
 			</section>
 
 			<section className="games-list-section">
 				<h2>Include Games</h2>
-				<GamesList></GamesList>
+				<GamesList games={apiData && apiData.games}/>
 			</section>
 
 			<section className="terms">
