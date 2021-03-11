@@ -1,11 +1,20 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
+import {ILeaderboardProps} from "../types"
 
-export const Leaderboard = () => {
+export const Leaderboard = ({prizeList}: ILeaderboardProps) => {
 
   const renderPrizeList = () => {
     // loop through the prizeList array and render a list item for each index
 
-    return
+    return prizeList!.map((prize, i) => {
+      return (
+        <div className="prize-container">
+          <div>{ i }</div>
+          <div>{ prize.title }</div>
+          <div>{ prize.total }</div>
+        </div>
+      )
+    })
   }
   return (
     <div className="leaderboard-container">
@@ -18,7 +27,7 @@ export const Leaderboard = () => {
 
       <div>
         <ol>
-          <li>First Prize</li>
+          {prizeList ? renderPrizeList() : "Oops, leaderboard data unavailable"}
         </ol>
       </div>
 
