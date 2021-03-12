@@ -3,15 +3,30 @@ body {
 	font-family: "Roboto", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6,.stats-text, time{
+	margin: 0;
 	font-family: "Barlow Condensed", sans-serif;
+}
+
+h1 {
+
+	font-size: 33px;
+	line-height: 35px;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 500;
+	color: #091870;
+}
+
+h3 {
+	color: #17dfe7;
+	font-size: 14px;
+	font-weight: 600;
 }
 
 code {

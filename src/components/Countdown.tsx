@@ -1,7 +1,53 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
+import styled from 'styled-components';
+
+
+const StyledCountdown = styled.div`
+  display: flex;
+  align-items: center;
+  margin-top: 26px;
+  font-weight: 500;
+  font-size: 22px;
+  font-family: "Barlow Condensed", sans-serif;
+
+
+  >* {
+    margin-right: 10px;
+  }
+
+  .countdown-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 18px;
+
+
+    transition-property: height width color border-color;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+
+    &.closed{
+      height: 0;
+      width: 22px;
+      color: transparent;
+      border-color: rgba(255,255,255,0.3);
+    }
+
+    &:hover{
+      height: 0;
+      width: 22px;
+      color: transparent;
+      border-color: rgba(255,255,255,0.3);
+    }
+  }
+`;
 
 export const Countdown = () => {
-  const endDate = new Date(2021, 2, 12, 17).getTime();
+  const endDate = new Date(2021, 2, 16, 17).getTime();
 
   const timeUnits = {
     minute: 60000,
@@ -10,6 +56,19 @@ export const Countdown = () => {
   };
 
   const [remaining, setRemaining] = useState(() => getRemainingTime());
+  const intervalRef = useRef<ReturnType<typeof window.setTimeout>>();
+
+
+  useEffect(() => {
+    const updateRemaining = () => {
+      console.log("UPDATING TIME");
+      setRemaining(getRemainingTime());
+    }
+
+    intervalRef.current = setInterval(updateRemaining, 60000);
+    // return () => clearInterval(intervalRef.current);
+  }, []);
+
 
   function getRemainingTime () {
     const time = endDate - Date.now();
@@ -23,24 +82,24 @@ export const Countdown = () => {
   console.log("TIME REMAINING:::", remaining.days, remaining.hours, remaining.minutes);
 
   return (
-    <div className="countdown-container">
+    <StyledCountdown>
       <span className="countdown-text">Starts at</span>
 
-      <div className="countdown-box">
+      <div className="countdown-box closed">
         <span className="countdown-text">{remaining.days}</span>
       </div>
       <span className="countdown-text">d</span>
 
       <div className="countdown-box">
-        <span className="countdown-text">{remaining.hours }</span>
+        <span className="countdown-text">{remaining.hours}</span>
       </div>
       <span className="countdown-text">h</span>
 
       <div className="countdown-box">
-        <span className="countdown-text">{remaining.minutes }</span>
+        <span className="countdown-text">{remaining.minutes}</span>
       </div>
       <span className="countdown-text">m</span>
 
-    </div>
+    </StyledCountdown>
   )
 };

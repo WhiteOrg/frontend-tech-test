@@ -6,6 +6,11 @@ export declare interface IGamesListProps {
   games: Game[] | null | undefined;
 }
 
+export declare interface IStatsProps {
+  prizePool: string | null | undefined;
+  players: number | null | undefined;
+}
+
 export declare interface IApiData {
   title: string;
   description: string;

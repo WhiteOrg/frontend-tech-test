@@ -1,5 +1,5 @@
 
-export function fetchData () {
+export default function fetchData () {
   const url = 'https://run.mocky.io/v3/e60fb51f-02b1-4ede-bd82-6c0481b5edda/';
   return fetch(url, {})
     // the responses under 400 are fine but over 400 are errors so the promise needs to be rejected
@@ -9,3 +9,4 @@ export function fetchData () {
     // catch the rejected promise
     .catch(err => console.error('Error while fetching', err));
 }
+
