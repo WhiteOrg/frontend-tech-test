@@ -4,7 +4,6 @@ import {IStatsProps} from '../types'
 
 const StyledStats = styled.div`
   margin-top: 76px;
-  /* border: 3px solid blue; */
   font-size: 14px;
   margin-bottom: 20px;
   display: grid;
@@ -21,11 +20,6 @@ const StyledStats = styled.div`
     font-size:26px;
     font-weight: 600;
     margin: 0;
-  }
-
-  .stats-item {
-
-    /* border: 3px solid #00ffaa; */
   }
 
   .prize {

@@ -1,38 +1,268 @@
-/* .App {
-	text-align: center;
+main {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	max-width: 740px;
 }
 
-.App-logo {
-	height: 40vmin;
-	pointer-events: none;
+.header-spacer {
+	height: 120px;
+	background-color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-	.App-logo {
-		animation: App-logo-spin infinite 20s linear;
-	}
+section {
+	background-color: white;
 }
 
-.App-header {
-	background-color: #15132e;
-	min-height: 100vh;
+.game-card-section {
+	position: relative;
+	color: white;
 	display: flex;
 	flex-direction: column;
+	background-size: cover;
+	background-position: center;
+
+	.close {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		border-radius: 50%;
+		background: url("./images/close.svg");
+		width: 34px;
+		height: 34px;
+		border: none;
+		outline-style: none;
+		margin-right: 5px;
+
+		transition-property: transform box-shadow;
+		transition-duration: 200ms;
+		transition-timing-function: cubic-bezier(0.42, 0, 0.54, 1.89);
+
+		:focus {
+			box-shadow: inset 30px 30px 30px 30px rgba(0, 0, 0, 0.2);
+		}
+
+		:active {
+			transform: scale(0.9);
+		}
+	}
+}
+
+.top-panel {
+	display: flex;
+	justify-content: space-between;
+	height: 70px;
+}
+
+.start-date-container {
+	display: flex;
+	align-items: center;
+
+	time {
+		font-size: 14px;
+		font-weight: 600;
+		margin-left: 12px;
+	}
+}
+
+.join-button {
+	max-width: 334px;
+	height: 42px;
+	margin: 30px 0 10px;
+	padding: 12px 0;
+	border-radius: 1px;
+	background-color: #f9cb11;
+	border: none;
+	font-size: 15px;
+	font-weight: 600;
+	font-family: "Barlow Condensed", sans-serif;
+	font-stretch: condensed;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: 1.88px;
+	color: #0a0052;
+	transition: background-color 100ms;
+
+	&:hover {
+		background-color: #ffde59;
+	}
+
+	&:active {
+		background-color: #dfc24e;
+	}
+}
+
+.leaderboard-top-panel {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+
+	input {
+		background: url("./images/refresh.svg") no-repeat;
+		background-position: center;
+		width: 20px;
+		height: 20px;
+		border: none;
+		border-radius: 50%;
+
+		border: none;
+		outline-style: none;
+
+		transition-property: transform box-shadow;
+		transition-duration: 500ms;
+		transition-timing-function: ease-in-out;
+
+		:focus {
+			box-shadow: inset 30px 30px 30px 30px rgba(0, 0, 0, 0.2);
+		}
+
+		:active {
+			transform: scale(0.9);
+		}
+
+		:hover {
+			transform: scale(1.1) rotate(180deg);
+		}
+	}
+}
+
+
+.description-section {
+	padding-top: 0;
+	padding-bottom: 0;
+
+	.description {
+		margin: -4px;
+		font-size: 16px;
+		line-height: 22px;
+		padding: 0 5px;
+	}
+}
+
+.games-list-section {
+	padding-bottom: 10px;
+
+	h2 {
+		padding: 10px 0;
+	}
+}
+
+.terms-section {
+	ul {
+		padding: 5px 10px 0 23px;
+		font-size: 14px;
+		line-height: 1.58;
+	}
+}
+
+footer {
+	height: 150px;
+	background-image: linear-gradient(-160deg, #158dd4, #56169b);
+	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
+
+	.inner-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		h4 {
+			color: #f9cb11;
+			margin: 0 0 15px;
+			font-size: 16px;
+			font-weight: 600;
+		}
+
+		.social-links-container {
+			display: flex;
+			justify-content: center;
+
+			a {
+				width: 46px;
+				height: 46px;
+				margin: 0 5px;
+
+				&.twitter-link {
+					background: url("./images/twitter.svg");
+				}
+
+				&.facebook-link {
+					background: url("./images/facebook.svg");
+				}
+			}
+		}
+	}
 }
 
-.App-link {
-	color: #61dafb;
+/* DESKTOP */
+@media screen and (min-width: 740px) {
+	.header-spacer {
+		background: #091870;
+	}
+
+	section {
+		padding: 50px 72px 20px 68px;
+	}
+
+	.top-panel {
+		height: 26px;
+	}
+
+	.title {
+		font-size: 48px;
+		font-weight: 400px;
+		width: 500px;
+
+		line-height: 0.54;
+		letter-spacing: -0.75px;
+	}
+
+	.join-button {
+		width: 300px;
+		margin-bottom: 20px;
+	}
+
+	.leaderboard-section {
+		padding-top: 30px;
+		padding-bottom: 35px;
+	}
+
+	.games-list-section {
+		padding-top: 30px;
+		padding-bottom: 35px;
+	}
+
+	.terms-section {
+		padding-top: 0;
+	}
+
+	h2 {
+		line-height: 0.93;
+		font-size: 28px;
+		font-weight: 500;
+	}
+
+	.footer-spacer {
+		position: relative;
+		height: 669px;
+		width: 100%;
+	}
 }
 
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
+/* MOBILE */
+@media screen and (max-width: 739px) {
+	section {
+		padding: 20px;
 	}
-	to {
-		transform: rotate(360deg);
+
+	.title {
+		width: 200px;
+		font-weight: 400;
 	}
-} */
+
+	.join-button {
+		max-width: 334px;
+	}
+}

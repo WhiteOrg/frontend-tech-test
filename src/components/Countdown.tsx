@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 
 const StyledCountdown = styled.div`
@@ -50,42 +50,41 @@ const StyledCountdown = styled.div`
 	@media screen and (max-width: 739px) {
     margin-top: 26px;
   }
-`;
+`
 
 export const Countdown = () => {
-  const endDate = new Date(2021, 2, 16, 17).getTime();
+  const endDate = new Date(2021, 2, 16, 17).getTime()
 
   const timeUnits = {
     minute: 60000,
     hour: 3600000,
     day: 86400000,
-  };
+  }
 
-  const [remaining, setRemaining] = useState(() => getRemainingTime());
-  const intervalRef = useRef<ReturnType<typeof window.setTimeout>>();
+  const [remaining, setRemaining] = useState(() => getRemainingTime())
+  const intervalRef = useRef<ReturnType<typeof window.setTimeout>>()
 
 
   useEffect(() => {
     const updateRemaining = () => {
-      console.log("UPDATING TIME");
-      setRemaining(getRemainingTime());
+      console.log("UPDATING TIME")
+      setRemaining(getRemainingTime())
     }
 
-    intervalRef.current = setInterval(updateRemaining, 60000);
-    // return () => clearInterval(intervalRef.current);
-  }, []);
+    intervalRef.current = setInterval(updateRemaining, 60000)
+  }, [])
 
 
   function getRemainingTime () {
-    const time = endDate - Date.now();
+    const time = endDate - Date.now()
     return {
       days: Math.floor(time / timeUnits.day),
       hours: Math.floor((time % timeUnits.day) / timeUnits.hour),
       minutes: Math.floor((time % timeUnits.hour) / timeUnits.minute),
-    };
-  };
+    }
+  }
 
-  console.log("TIME REMAINING:::", remaining.days, remaining.hours, remaining.minutes);
+  console.log("TIME REMAINING:::", remaining.days, remaining.hours, remaining.minutes)
 
   return (
     <StyledCountdown>
@@ -108,4 +107,4 @@ export const Countdown = () => {
 
     </StyledCountdown>
   )
-};
+}

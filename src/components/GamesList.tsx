@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { IGamesListProps } from "../types"
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from 'uuid'
 
 const StyledGamesList = styled.div`
   position: relative;
@@ -22,7 +22,7 @@ const StyledGamesList = styled.div`
     grid-template-rows: 2fr 2fr;
     padding-top: 10px;
   }
-`;
+`
 
 export const GamesList = ({ games }: IGamesListProps) => {
   const renderGames = () => {
