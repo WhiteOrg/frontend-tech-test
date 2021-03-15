@@ -5,7 +5,6 @@ import { v4 as uuidv4 } from 'uuid';
 
 const StyledGamesList = styled.div`
   position: relative;
-  /* width: 200px; */
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-template-rows: 3fr 3fr 3fr;
@@ -15,8 +14,13 @@ const StyledGamesList = styled.div`
   padding-top: 5px;
 
   .game-pic {
-    /* justify-self: stretch; */
     max-width: 100%;
+  }
+
+  @media screen and (min-width: 740px) {
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 2fr 2fr;
+    padding-top: 10px;
   }
 `;
 

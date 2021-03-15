@@ -5,11 +5,9 @@ import styled from 'styled-components';
 const StyledCountdown = styled.div`
   display: flex;
   align-items: center;
-  margin-top: 26px;
   font-weight: 500;
   font-size: 22px;
   font-family: "Barlow Condensed", sans-serif;
-
 
   >* {
     margin-right: 10px;
@@ -43,6 +41,14 @@ const StyledCountdown = styled.div`
       color: transparent;
       border-color: rgba(255,255,255,0.3);
     }
+  }
+
+  @media screen and (min-width: 740px) {
+    margin-top: 30px;
+	}
+
+	@media screen and (max-width: 739px) {
+    margin-top: 26px;
   }
 `;
 

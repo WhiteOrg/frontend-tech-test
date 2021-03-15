@@ -44,19 +44,19 @@ const StyledLeaderboard = styled.div`
   }
 
   ol {
-    padding: 0;
+    padding: 0 20px 0 0;
     margin:0;
 
   }
 
   li {
     /* border: 1px solid green; */
-    width: 314px;
+    /* max-width: 314px; */
     height: 32px;
     display: flex;
     border-bottom: 1px solid #f5f4fe;
     display: grid;
-    grid-template-columns: 15px 56px 243px;
+    grid-template-columns: 15px 56px auto;
     justify-items: flex-end;
     align-items: center;
 

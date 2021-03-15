@@ -3,7 +3,7 @@ body {
 	font-family: "Roboto", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-
+	background: #091870;
 }
 
 h1, h2, h3, h4, h5, h6,.stats-text, time{

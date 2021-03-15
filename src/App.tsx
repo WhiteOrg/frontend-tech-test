@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./App.css";
+// import "./App.css";
 import { Countdown } from "./components/Countdown"
 import { Stats } from "./components/Stats"
 import { Leaderboard } from "./components/Leaderboard"
@@ -10,30 +10,34 @@ import styled from "styled-components"
 import "./images/calendar.svg"
 
 const StyledApp = styled.main`
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	max-width: 740px;
+
 	.header-spacer {
 		height: 120px;
-		/* background-color: pink; */
-		/* background-image: url("./images/close.svg"); */
+		background-color: white;
 	}
 
 	section {
-		padding: 20px;
-		/* border: 3px solid #660080; */
+		background-color: white;
 	}
 
 	.game-card-section {
+		position: relative;
 		color: white;
 		display: flex;
 		flex-direction: column;
-		/* height: 410px; */
-		/* border: 3px solid #ff9100; */
 		background-size: cover;
 		background-position: center;
 
 		.close {
+			position: absolute;
+			right: 20px;
+			top: 20px;
 			border-radius: 50%;
 			background: url(${require("./images/close.svg")});
-			/* border: 3px solid red; */
 			width: 34px;
 			height: 34px;
 			border: none;
@@ -57,15 +61,7 @@ const StyledApp = styled.main`
 	.top-panel{
 		display: flex;
 		justify-content:space-between;
-		/* align-items: center; */
-		/* border: 3px solid #e5ff00; */
 		height: 70px;
-
-		.title {
-			width: 50%;
-			font-weight: 400;
-		}
-
 	}
 
 	.start-date-container {
@@ -76,12 +72,11 @@ const StyledApp = styled.main`
 			font-size: 14px;
 			font-weight: 600;
 			margin-left: 12px;
-			/* font-style: normal; */
 		}
 	}
 
 	.join-button {
-		width: 334px;
+		max-width: 334px;
 		height: 42px;
 		margin: 30px 0 10px;
 		padding: 12px 0;
@@ -99,15 +94,10 @@ const StyledApp = styled.main`
 	}
 
 	.leaderboard-top-panel {
-		/* border: 3px solid #e5ff00; */
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		margin-top: 10px;
-
-		h2{
-
-		}
 
 		input {
 			background: url(${require("./images/refresh.svg")}) no-repeat;
@@ -117,7 +107,6 @@ const StyledApp = styled.main`
 			border: none;
 			border-radius: 50%;
 
-			//! MAKE THEME
 			border: none;
 			outline-style: none;
 
@@ -137,11 +126,12 @@ const StyledApp = styled.main`
 				transform: scale(1.1) rotate(180deg);
 			}
 		}
-
-
 	}
+
+
 	.description-section {
-		padding: 0 20px;
+		padding-top: 0;
+		padding-bottom: 0;
 		.description {
 			margin: -4px;
 			font-size: 16px;
@@ -203,10 +193,78 @@ const StyledApp = styled.main`
 			}
 		}
 
-		/* a */
 	}
-	`
 
+	/* DESKTOP */
+	@media screen and (min-width: 740px) {
+		.header-spacer {
+			background: #091870;
+		}
+
+		section {
+			padding: 50px 72px 20px 68px;
+		}
+
+		.top-panel {
+			height: 26px;
+		}
+		.title {
+			font-size: 48px;
+			font-weight: 400px;
+			width: 500px;
+
+			line-height: 0.54;
+			letter-spacing: -0.75px;
+		}
+
+		.join-button {
+			width: 300px;
+			margin-bottom: 20px;
+		}
+
+		.leaderboard-section {
+			padding-top: 30px;
+			padding-bottom: 35px;
+		}
+
+		.games-list-section {
+			padding-top: 30px;
+			padding-bottom: 35px;
+		}
+
+		.terms-section {
+			padding-top: 0;
+		}
+
+		h2 {
+			line-height: 0.93;
+			font-size: 28px;
+			font-weight: 500;
+		}
+
+		.footer-spacer {
+			position: relative;
+			height: 669px;
+			width: 100%;
+		}
+	}
+
+	/* MOBILE */
+	@media screen and (max-width: 739px) {
+		section {
+			padding: 20px;
+		}
+
+		.title {
+			width: 200px;
+			font-weight: 400;
+		}
+
+		.join-button {
+			max-width: 334px;
+		}
+	}
+`
 
 const App = () => {
 
@@ -228,13 +286,11 @@ const App = () => {
 
 	return (
 		<StyledApp className="app-container">
-			{/* <div className="header-spacer" /> */}
+			<div className="header-spacer" />
 			<section className="game-card-section page" style={{ backgroundImage: `url(${apiData?.backgroundImage})` }} >
-				{/* <img src={apiData?.backgroundImage} alt=""/> */}
 				<div className="top-panel">
 					<h1 className="title">{apiData && apiData.title}</h1>
 					<input className="close" type="button" />
-					{/* <CloseIcon /> */}
 				</div>
 
 				<Countdown />
@@ -303,6 +359,7 @@ const App = () => {
 					</div>
 				</div>
 			</footer>
+			<div className="footer-spacer" />
 		</StyledApp >
 	);
 }
