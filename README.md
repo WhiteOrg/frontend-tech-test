@@ -59,7 +59,7 @@ Your solution should request all information from the API, ingest the returned J
 Where the API data differs from the design mockups, **prioritise the API version**, for example the total number of players.
 
 Endpoint:
-`https://run.mocky.io/v3/e60fb51f-02b1-4ede-bd82-6c0481b5edda`
+`https://run.mocky.io/v3/5ab803b0-5f91-4855-9d2c-ef5c44d69bff`
 
 ### Notes
 - Don't worry about the **close button** at the top right of the design; try to include it as an image or interactive element, but we won't expect it to do anything. Consider it purely a visual placeholder.
