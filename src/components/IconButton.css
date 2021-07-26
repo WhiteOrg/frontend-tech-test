@@ -1,0 +1,14 @@
+.icon-button {
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  opacity: 0.8;
+}
+
+.icon-button img {
+  width: 100%;
+  height: 100%;
+}
