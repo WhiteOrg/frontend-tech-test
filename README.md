@@ -30,7 +30,7 @@ We'd strongly recommend the use of an IDE such as [Visual Studio Code](https://c
 1. Run `git status` to ensure that you're on the correct branch (`main`) and that the upstream branch is recognised (`origin/main`);
 1. Create a new branch using **your name** e.g.
 `git checkout -b katherine-johnson`
-1. Run `npm start` to launch the app to [http://localhost:3000](http://localhost:3000); you should see a rotating Stech logo and some text if everything has worked. Edit that page in the `App.js` file and you should see it automatically update in the browser when you hit save 😎
+1. Run `npm start` to launch the app to [http://localhost:3000](http://localhost:3000); you should see a rotating Stech logo and some text if everything has worked. Edit that page in the `App.tsx` file and you should see it automatically update in the browser when you hit save 😎
 
 At this stage, feel free to push your branch back up to the original repository (see submission instructions for how). We won't peek at your work until you submit the final solution, so it's fine (recommended, even) to use the GitHub repo as a backup as you progress.
 
@@ -66,7 +66,7 @@ Endpoint:
 - You'll notice that the provided mockups have different headline text for mobile/desktop views. To be clear, the headline should always be the value provided via the API, regardless of viewport size.
 - All fonts used on the designs have already been included in the repository for you to use.
 - Some images will be available via the API; any others should be included in the repository already.
-- The first thing you'll have to do is delete the existing logo, title etc. in `App.js`, but also feel free to tidy up respective `.css` files and anything else you don't need.
+- The first thing you'll have to do is delete the existing logo, title etc. in `App.tsx`, but also feel free to tidy up respective `.css` files and anything else you don't need.
 
 ### What We're Looking For
 Your solution should:
