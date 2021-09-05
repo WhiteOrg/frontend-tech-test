@@ -1,7 +1,9 @@
 # Stech Frontend Technical Challenge
+
 Hi 👋 and welcome to the frontend tech challenge. We'd like you to create a simple, responsive webpage that ingests data from an API and displays it in a useful format for potential users. You don't need to worry about design or layout, as we've provided mockups that you should try to replicate (as closely as possible).
 
 ## Page Design
+
 Design mockups are provided through Zeplin. Don't worry if you've never used the service before, it's pretty easy to navigate and you can sign up for free. Once you've done so you should be able to see both images when you use the links below ⬇
 
 - [Mobile Layout](https://zpl.io/awKqRBd)
@@ -13,7 +15,9 @@ PS: if you'd prefer not to use Zeplin, both images can be found in the root fold
 ## Getting Started
 
 ### Software Requirements
+
 First, you'll need to have the following programs and services installed locally:
+
 - [**NodeJS**](https://nodejs.org/en/) >= 8.10
 - **npm** >= 5.6 (included in the NodeJS installation)
 - [**Git**](https://git-scm.com/downloads) >= 2.27.0
@@ -22,19 +26,21 @@ You'll also need a **GitHub account** if you don't already have one.
 We'd strongly recommend the use of an IDE such as [Visual Studio Code](https://code.visualstudio.com/), as well as helpful tools like [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/), though feel free to use whatever setup you prefer 👍
 
 ### Setting Up The Challenge
+
 1. Open a terminal window and navigate to the folder you want the repository to sit within;
 1. Clone the repository to your local drive using:
-`git clone https://github.com/WhiteOrg/frontend-tech-test.git`
+   `git clone https://github.com/WhiteOrg/frontend-tech-test.git`
 1. Navigate to the new folder:
-`cd frontend-tech-test`
+   `cd frontend-tech-test`
 1. Run `git status` to ensure that you're on the correct branch (`main`) and that the upstream branch is recognised (`origin/main`);
 1. Create a new branch using **your name** e.g.
-`git checkout -b katherine-johnson`
+   `git checkout -b katherine-johnson`
 1. Run `npm start` to launch the app to [http://localhost:3000](http://localhost:3000); you should see a rotating Stech logo and some text if everything has worked. Edit that page in the `App.js` file and you should see it automatically update in the browser when you hit save 😎
 
 At this stage, feel free to push your branch back up to the original repository (see submission instructions for how). We won't peek at your work until you submit the final solution, so it's fine (recommended, even) to use the GitHub repo as a backup as you progress.
 
 ## The Challenge
+
 You've been provided with the designs for a new landing page, advertising a player tournament that we're looking to launch: **Play'n GO!**
 
 The tournament will run for 7 days, offer a sizeable £25,000 prize pool, and allow players to rack up points across six featured games.
@@ -52,6 +58,7 @@ The timer should count down from the start date and will therefore need to autom
 The "join" button, refresh button, and both social media share buttons should be valid and accessible interactive elements. However **they do not need to route the user anywhere** (though the refresh button _should_ refetch data from the API as mentioned above).
 
 ### API Endpoint
+
 You have also been provided with an API endpoint that details some key information about the tournament (title, start and end dates, player rankings etc.).
 
 Your solution should request all information from the API, ingest the returned JSON package, and use the details it contains to populate the webpage.
@@ -62,6 +69,7 @@ Endpoint:
 `https://run.mocky.io/v3/5ab803b0-5f91-4855-9d2c-ef5c44d69bff`
 
 ### Notes
+
 - Don't worry about the **close button** at the top right of the design; try to include it as an image or interactive element, but we won't expect it to do anything. Consider it purely a visual placeholder.
 - You'll notice that the provided mockups have different headline text for mobile/desktop views. To be clear, the headline should always be the value provided via the API, regardless of viewport size.
 - All fonts used on the designs have already been included in the repository for you to use.
@@ -69,6 +77,7 @@ Endpoint:
 - The first thing you'll have to do is delete the existing logo, title etc. in `App.js`, but also feel free to tidy up respective `.css` files and anything else you don't need.
 
 ### What We're Looking For
+
 Your solution should:
 
 - Take a mobile-first approach;
@@ -84,6 +93,7 @@ Your solution should:
 How you achieve that is entirely up to you. The repository should have all the tools you need, but if you'd like to augment them with additional dependencies or services then go for it 👩‍💻
 
 ### Bonus Points
+
 Just a few additional extras if you have spare time. These are _absolutely not necessary_ but mimic our own internal tech stack a bit more closely, so it's useful for us to see how you might use them.
 
 - Using some CSS-in-JS. We use [Styled Components](https://styled-components.com/) internally and you'll find that package already included within the repository.
@@ -91,19 +101,21 @@ Just a few additional extras if you have spare time. These are _absolutely not n
 - Adding a touch of type safety. You'll find [TypeScript](https://www.typescriptlang.org/) is available if you prefer working with type-safe components.
 
 ## Submitting Your Solution
+
 Once you're happy with your work, follow these steps:
 
 1. Ensure any test code is tidied up (debug strings, commented out functionality, etc. – actual comments are fine and actively encouraged 😉);
 1. Push your branch back to the original repository (use **your branch name** not the example below):
-`git push -u origin katherine-johnson`
+   `git push -u origin katherine-johnson`
 1. On GitHub, open a new pull request to merge your branch into `main`, with your name as the title;
 1. Add any relevant notes or comments to the description as necessary;
 1. Hit **Create Pull Request** and you're done! ✨
 
-Don't worry if you submit a pull request and then realise you've missed something or think of a better solution to part of the challenge. We're not testing to see how *fast* you are but how good your code quality is, so feel free to push up additional changes right up to the deadline. The pull request will automatically update each time you do.
+Don't worry if you submit a pull request and then realise you've missed something or think of a better solution to part of the challenge. We're not testing to see how _fast_ you are but how good your code quality is, so feel free to push up additional changes right up to the deadline. The pull request will automatically update each time you do.
 Any changes submmited _after_ the deadline, however, won't be considered.
 
 ### What Happens Next?
+
 We'll review your submitted solution against the criteria outlined above and be in touch. If you're solution is successful then you'll be invited to a final stage interview with Antonio to go over culture fit, your broader career goals, and provide you with a chance to ask any remaining questions that you have about Stech.
 No matter what our decision, expect feedback within one working day of your deadline.
 
