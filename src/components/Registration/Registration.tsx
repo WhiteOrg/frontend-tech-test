@@ -1,27 +1,35 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import Ripple from 'material-ripple-effects'
+import { useQueryClient } from 'react-query'
 import { COLORS, WEIGHTS } from '../../constants'
-import data from '../../data.json'
 import user from '../../images/user.svg'
 import calendar from '../../images/calendar.svg'
 import close from '../../images/close.svg'
 import { CounterBox } from '../CounterBox'
+import useDeadline from '../../hooks/useDeadline'
+import { TournamentData } from '../../services/tournamentApi'
 
 const Registration: React.FC = () => {
+  const queryClient = useQueryClient()
+  const data = queryClient.getQueryData<TournamentData>('tournamentData')
+  const { days, hours, minutes } = useDeadline(604800)
   const ripple = new Ripple()
+
+  if (!data) return null
 
   return (
     <>
-      <Wrapper>
+      <BackgroundWrapper data={data}>
         <TitleWrapper>
           <Title>{data.title}</Title>
           <CloseButton tabIndex={0} src={close} alt="close" />
         </TitleWrapper>
         <CountdownWrapper>
           <CountdownText>
-            Starts at <CounterBox>6</CounterBox> d <CounterBox>11</CounterBox> h
-            <CounterBox>33</CounterBox> m
+            Starts at <CounterBox>{days}</CounterBox> d{' '}
+            <CounterBox>{hours}</CounterBox> h<CounterBox>{minutes}</CounterBox>{' '}
+            m
           </CountdownText>
         </CountdownWrapper>
         <InformationWrapper>
@@ -44,7 +52,7 @@ const Registration: React.FC = () => {
           </StartDateText>
         </StartDateWrapper>
         <Button onMouseUp={(e) => ripple.create(e, 'light')}>Join</Button>
-      </Wrapper>
+      </BackgroundWrapper>
     </>
   )
 }
@@ -177,7 +185,8 @@ const Title = styled.h1`
 
 const Wrapper = styled.section`
   padding: 20px;
-  background: url(${data.backgroundImage});
+  background: ${(props: { data: TournamentData }) =>
+    `url(${props.data.backgroundImage})`};
   height: fit-content;
   background-size: cover;
 
@@ -185,5 +194,13 @@ const Wrapper = styled.section`
     padding: 26px 25px 30px 68px;
   }
 `
+
+interface BackgroundWrapperProps {
+  data: TournamentData
+}
+
+const BackgroundWrapper: React.FC<BackgroundWrapperProps> = (props) => (
+  <Wrapper {...props} />
+)
 
 export default Registration

@@ -1,13 +1,21 @@
 import React from 'react'
 import styled from 'styled-components/macro'
-import data from '../../data.json'
+import { useQueryClient } from 'react-query'
 import { COLORS, WEIGHTS } from '../../constants'
+import { TournamentData } from '../../services/tournamentApi'
 
-const Description: React.FC = () => (
-  <Wrapper>
-    <DescriptionText>{data.description}</DescriptionText>
-  </Wrapper>
-)
+const Description: React.FC = () => {
+  const queryClient = useQueryClient()
+  const data = queryClient.getQueryData<TournamentData>('tournamentData')
+
+  if (!data) return null
+
+  return (
+    <Wrapper>
+      <DescriptionText>{data.description}</DescriptionText>
+    </Wrapper>
+  )
+}
 
 const DescriptionText = styled.p`
   margin: 30px 21px 30px 20px;

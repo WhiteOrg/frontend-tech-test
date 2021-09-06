@@ -1,18 +1,26 @@
 import React from 'react'
 import styled from 'styled-components/macro'
-import data from '../../data.json'
+import { useQueryClient } from 'react-query'
 import { COLORS, WEIGHTS } from '../../constants'
+import { TournamentData } from '../../services/tournamentApi'
 
-const IncludedGames: React.FC = () => (
-  <Wrapper>
-    <GamesTitle>Include Games</GamesTitle>
-    <GamesWrapper>
-      {data.games.map((game) => (
-        <GameImage key={game.title} src={game.src} />
-      ))}
-    </GamesWrapper>
-  </Wrapper>
-)
+const IncludedGames: React.FC = () => {
+  const queryClient = useQueryClient()
+  const data = queryClient.getQueryData<TournamentData>('tournamentData')
+
+  if (!data) return null
+
+  return (
+    <Wrapper>
+      <GamesTitle>Include Games</GamesTitle>
+      <GamesWrapper>
+        {data.games.map((game) => (
+          <GameImage key={game.title} src={game.src} />
+        ))}
+      </GamesWrapper>
+    </Wrapper>
+  )
+}
 
 const GamesWrapper = styled.div`
   display: flex;

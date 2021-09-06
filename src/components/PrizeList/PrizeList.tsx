@@ -1,28 +1,41 @@
 import React from 'react'
 import styled from 'styled-components/macro'
-import data from '../../data.json'
+import { useQueryClient } from 'react-query'
 import { COLORS, WEIGHTS } from '../../constants'
 import refresh from '../../images/refresh.svg'
+import { TournamentData } from '../../services/tournamentApi'
 
-const PrizeList: React.FC = () => (
-  <Wrapper>
-    <TitleWrapper>
-      <PrizeListTitle>Prize List</PrizeListTitle>
-      <RefreshButton tabIndex={0} src={refresh} alt="refresh" />
-    </TitleWrapper>
-    <Divider />
-    <ListWrapper>
-      {data.prizeList.map((prize, index) => (
-        <ListItem key={prize.title}>
-          <ListItemIndex>{index}</ListItemIndex>
-          <ListItemTitle>{prize.title}</ListItemTitle>
-          <ListItemText>{prize.total}</ListItemText>
-        </ListItem>
-      ))}
-    </ListWrapper>
-    <Divider />
-  </Wrapper>
-)
+const PrizeList: React.FC = () => {
+  const queryClient = useQueryClient()
+  const data = queryClient.getQueryData<TournamentData>('tournamentData')
+
+  if (!data) return null
+
+  return (
+    <Wrapper>
+      <TitleWrapper>
+        <PrizeListTitle>Prize List</PrizeListTitle>
+        <RefreshButton
+          tabIndex={0}
+          src={refresh}
+          alt="refresh"
+          onClick={() => queryClient.invalidateQueries('tournamentData')}
+        />
+      </TitleWrapper>
+      <Divider />
+      <ListWrapper>
+        {data.prizeList.map((prize, index) => (
+          <ListItem key={prize.title}>
+            <ListItemIndex>{index + 1}</ListItemIndex>
+            <ListItemTitle>{prize.title}</ListItemTitle>
+            <ListItemText>{prize.total}</ListItemText>
+          </ListItem>
+        ))}
+      </ListWrapper>
+      <Divider />
+    </Wrapper>
+  )
+}
 
 const ListItemText = styled.p`
   font-size: 16px;

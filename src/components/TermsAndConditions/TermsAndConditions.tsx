@@ -1,17 +1,20 @@
 import React from 'react'
 import styled from 'styled-components/macro'
+import { useQueryClient } from 'react-query'
 import useMediaQuery from 'react-use-media-query-hook'
-import data from '../../data.json'
 import { COLORS, WEIGHTS } from '../../constants'
+import { TournamentData } from '../../services/tournamentApi'
 
 const TermsAndConditions: React.FC = () => {
+  const queryClient = useQueryClient()
+  const data = queryClient.getQueryData<TournamentData>('tournamentData')
   const isDesktop = useMediaQuery('(min-width: 600px)')
 
   return (
     <Wrapper>
       <TermsAndConditionsTitle>Terms & Conditions</TermsAndConditionsTitle>
       <ListWrapper>
-        {data.terms.map((term) => (
+        {data?.terms.map((term) => (
           <React.Fragment key={term}>
             {isDesktop ? (
               <ListItem>• {term}</ListItem>
