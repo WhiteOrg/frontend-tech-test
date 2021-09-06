@@ -37,7 +37,8 @@
     "no-restricted-syntax": "off",
     "no-await-in-loop": "off",
     "no-new-func": "off",
-    "consistent-return": "off"
+    "consistent-return": "off",
+    "import/prefer-default-export": "off"
   },
   "overrides": [
     {
@@ -89,7 +90,9 @@
         "@typescript-eslint/no-implied-eval": "off",
         "no-new-func": "off",
         "consistent-return": "off",
-        "@typescript-eslint/naming-convention": ["off"]
+        "@typescript-eslint/naming-convention": ["off"],
+        "import/prefer-default-export": "off",
+        "@typescript-eslint/no-use-before-define": "off"
       }
     }
   ]
