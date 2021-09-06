@@ -111,6 +111,10 @@ const PrizeListTitle = styled.h2`
   letter-spacing: normal;
   color: ${COLORS.sectionTitle};
   font-weight: ${WEIGHTS.medium};
+
+  @media (min-width: 600px) {
+    font-size: 28px;
+  }
 `
 
 const Wrapper = styled.section`
