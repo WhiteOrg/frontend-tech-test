@@ -1,25 +1,44 @@
-import React from "react";
-import logo from "./images/stech.svg";
-import "./App.css";
+import React, { useState, useEffect } from "react";
+import { executeFetch } from "./api/index";
+import { Header, Footer, Loading, Error, Wrapper } from "./components";
+import { errorMessage } from "./constants/constants";
+import { GlobalStyle, AppContainer } from "./styles/styles";
 
 function App() {
-	return (
-		<header className="App-header">
-			<img src={logo} className="App-logo" alt="Stech logo." />
-			<h1>Stech Frontend Challenge</h1>
-			<p>
-				Edit <code>src/App.js</code> and save to reload.
-			</p>
-			<a
-				className="App-link"
-				href="https://github.com/WhiteOrg/frontend-tech-test"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				Full Instructions
-			</a>
-		</header>
-	);
+  const [data, setData] = useState(null);
+  const [error, setError] = useState(null);
+
+  const onFetchSuccess = (payload) => {
+    setData(payload);
+    setError(null);
+  };
+
+  const onFetchFailure = () => {
+    setData(null);
+    setError(errorMessage);
+  };
+
+  const fetchData = () => {
+    executeFetch(onFetchSuccess, onFetchFailure);
+  };
+
+  useEffect(fetchData, []);
+  if (!data && !error) {
+    return <Loading />;
+  }
+  if (error) {
+    return <Error text={error} />;
+  }
+  return (
+    <>
+      <AppContainer>
+        <Header data={data} />
+        <Wrapper data={data} handleRefreshClick={fetchData} />
+        <Footer />
+      </AppContainer>
+      <GlobalStyle />
+    </>
+  );
 }
 
 export default App;
