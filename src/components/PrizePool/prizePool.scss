@@ -1,0 +1,28 @@
+// Repeated code
+.prizePool {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+  height: 46px;
+  &__heading {
+    height: 17px;
+    margin: 0 47px 3px 0;
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #17dfe7;
+  }
+  &__prize {
+    margin: 3px 0 0;
+    font-size: 26px;
+    font-weight: 600;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #fff;
+  }
+}

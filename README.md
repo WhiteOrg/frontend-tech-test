@@ -1,3 +1,20 @@
+# SHAQ'S NOTES
+
+NOTES:
+When building and styling the components I had to choose between keeping all relevant styling within each component folder, which would lead to repeating code, and styling some components within their parent’s scss file which would mean I’d only have to the the styling once but it would make the child component less reusable since it wouldn’t have all of it’s styling (I had to chose between DRY and reusable code)
+
+Because the test spec specified reusability I decided to keep each component’s styling within its own sass file although this meant repeating code. I decided to prioritise reusability over DRY code
+
+The Mocky api seemed to be down during my test (I e-mailed Kate about this) which held me back and so I was unable to complete the test on Friday evening.
+
+Overall I think my submission meets the requirements and displays my way of thinking. I tried to demonstrate my knowledge of standards as a developer where I could such as accessibility, readable code, clean code, and reusability. I also made an effort to keep my code consistent down to the order of imports and kept my class naming conventions consistent with the help of using the BEM standard inline with sass
+
+I look forward to hearing your feedback
+
+
+
+
+
 # Stech Frontend Technical Challenge
 Hi 👋 and welcome to the frontend tech challenge. We'd like you to create a simple, responsive webpage that ingests data from an API and displays it in a useful format for potential users. You don't need to worry about design or layout, as we've provided mockups that you should try to replicate (as closely as possible).
 
