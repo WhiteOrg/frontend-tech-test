@@ -1,0 +1,15 @@
+.clock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &__digit {
+    display: flex;
+    border: solid 2px white;
+    border-radius: 5px;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 9px;
+  }
+}

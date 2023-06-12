@@ -1,0 +1,23 @@
+.includeGames {
+  padding: 0 20px;
+  @media (min-width: 800px) {
+    padding: 0 5%;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    @media (min-width: 800px) {
+      gap: 20px 2%;
+    }
+    img {
+      width: 160px;
+      height: 110px;
+      @media (min-width: 800px) {
+        width: 30%;
+        max-width: 400px;
+        height: auto;
+      }
+    }
+  }
+}

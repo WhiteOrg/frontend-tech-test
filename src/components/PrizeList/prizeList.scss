@@ -1,0 +1,69 @@
+.prizeList {
+  display: flex;
+  padding: 0 20px;
+  flex-direction: column;
+  @media (min-width: 800px) {
+    padding: 0 5%;
+  }
+  &__heading {
+    display: flex;
+    margin: 30px 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      margin: 0;
+    }
+    button {
+      background: none;
+      border: none;
+      padding: 0;
+      font: inherit;
+      cursor: pointer;
+      height: fit-content;
+    }
+  }
+  table {
+    width: 100%;
+    margin: 20px 0;
+  }
+  &__table {
+    display: flex;
+    border-top: 2px solid rgba(128, 128, 128, 0.488);
+    border-bottom: 2px solid rgba(128, 128, 128, 0.488);
+    height: 235px;
+    overflow-y: scroll;
+    &--loading {
+      display: flex;
+      margin: auto;
+    }
+    tr {
+      height: 32px;
+      border-bottom: solid 2px rgba(128, 128, 128, 0.921);
+      font-size: 16px;
+      font-weight: 600;
+      font-stretch: condensed;
+      font-style: normal;
+      line-height: 2.06;
+      letter-spacing: normal;
+      color: #000;
+    }
+    &--index {
+      position: relative;
+    }
+    &--title {
+      position: relative;
+    }
+    &--total {
+      text-align: end;
+      padding-right: 16px;
+    }
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f9cb11;
+  border-radius: 2px;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}

@@ -1,0 +1,14 @@
+.terms {
+  padding: 0 20px;
+	@media (min-width: 800px) {
+	  padding: 0 5%;
+	}
+  ul {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.57;
+    padding-right: 15px;
+    padding-left: 25px;
+    margin-bottom: 40px;
+  }
+}
